@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'raleway';
+    src: url(../CSS/Raleway-Regular.ttf) format('truetype')
+}
+
+*{
+    font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+}
+
+p{
+    font-weight: bold;
+}
