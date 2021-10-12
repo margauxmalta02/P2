@@ -1,0 +1,40 @@
+
+.hebergements1{
+    ;
+    position:relative;
+    padding:0.5em;
+    border-radius: 10px;
+    margin-top:3%;
+    margin-left:15%;
+    margin-right:50%;
+    background-color: #F2F2F2 ;
+    list-style: inherit;
+  }
+  
+  .Lespluspopulaires{
+    display:inline-block;
+    position:relative;
+    padding:0.5em;
+    border-radius: 10px;
+    margin-top:3%;
+    margin-right:25%;
+    margin-left: 40%;
+    background-color: #F2F2F2 ; 
+  }
+  .Activités{
+    position:relative;
+    padding:0.5em;
+    border-radius: 10px;
+    margin-top:3%;
+    margin-left:15%;
+    margin-right:50%;
+  }
+  
+  .Apropos{
+    position: inline-end; 
+  }
+
+  .menuflitre{
+      border-radius: 10px;
+      border: 3px; color: black;
+  }
