@@ -50,77 +50,51 @@ P{
 
 /* SECTIONS */
 .header{
-  
-}
-
-.search{
-  
-}
-
-.hebergementsamarseille{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-  background-color: #F2F2F2;
-  border-radius: 10px;
-  width: 27%;
-  align-items: space-around;
-}
-
-.Leslogementslespluspopulaires{
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  height: 100px;
-  background-color: #F2F2F2;
-  border-radius: 10px;
-  align-items: space-around;
-}
-
-.lesactivitésamarseille{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #F2F2F2;
-  border-radius: 10px;
-  align-items: space-around;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: "logo . navbar button";
+  display: grid;
+  max-width: 1440px;
   margin: auto;
 }
-
-.footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+header img {
+  grid-area: logo;
+  width: auto;
+  height: 2.813rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  }
+.header nav {
+  grid-area: navbar;
 }
-
-/* DIV */
-
-.lineheader{
-  
+.header ul {
+  margin: 1.2rem 0;
+  width: 100%;
+  text-align: center;
 }
-
-.titre{
-  
+.header li {
+  padding: 0 1.2rem;
 }
-
-.modulederecherche{
-  
+.header nav a {
+  padding: 1rem 0;
+  font-weight: 500;
+  text-align: center;
+  transition-duration: 0.1s;
+  border-bottom: 3px transparent solid;
 }
-
-.menufitres{
-  
+.header nav a:hover {
+  border-top: 3px solid #0065FC;
+  color: #0065FC;
 }
-
-.hebergement1{
-  
+.header nav a[data-active="true"] {
+  border-top: 3px solid #0065FC;
+  color: #0065FC;
 }
-
-.lespluspopulaires{
-  
+.main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
-
-.activitésmarseille{
+.search {
   
 }
