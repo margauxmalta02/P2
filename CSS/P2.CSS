@@ -94,6 +94,30 @@ img{
   margin-top: 5px;
   margin-bottom: 10px;
 }
+.map{
+  font-size: x-small;
+  display: flex;
+  justify-content: left;
+  margin: 0px;
+  border-radius: 10px;
+  border-color: white;
+  border-style: none;
+  border-left: none;
+  border-right: none;
+  padding: 0px;
+  padding-left: none;
+  padding-right: none;
+}
+.iconemap{
+  background-color: #F2F2F2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .search nav{
   font-size: x-small;
   border-style: initial;
@@ -103,35 +127,16 @@ img{
 }
 .search input{
   font-weight: bold;
-  color: black;
-  margin-left: 0px;
-  margin-right: 0px;
-  border-style: none;
-  border-color:#F2F2F2;
-  border-right: transparent;
-  border-left: transparent;
-  
+  padding-right: 0px white;
+  padding-left: 0px white;
 }
 .search button.rechercher{
-  color:white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-style: initial;
-  background-color: #0065FC;
-  border-color: #0065FC;
-  margin: 0px;
-  font-weight: normal;
+  color: white;
+  background-color:#0065FC ;
+  align-items: center;
 }
-.map{
-  border-right: 0px;
-  border-radius: 10px;
-  background-color: #F2F2F2;
-  line-height: 18px;
-  margin-left: auto;
-  margin-left: auto;
-  margin-bottom: auto;
-  margin-top: auto
-  ;
 }
 .fa, .fab, .fad, .fal, .far, .fas {
   display: inline-block;
@@ -140,19 +145,29 @@ img{
   line-height: 1;
   text-align: center;
 }
-
 h2{
   font-size: x-small;
   font-weight: bold;
 }
 div.menufiltres{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content:space-between;
   font-size: x-small;
   font-weight: bold;
+  margin-top: 15px;
 }
 button{
+  display: flex;
+  flex-wrap: nowrap;
   color:black;
   font-weight: bold;
   border-style: none;
+}
+.menufiltres button{
+  margin-left: 0px;
+  border-color: #F2F2F2;
+  border:2px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: white;
@@ -167,4 +182,40 @@ button{
   background-color: #DEEBFF; 
   border-radius: 50px;
   text-align: center; 
+}
+.fa-money-bill-wave-alt::before{
+  color: #0065FC;
+  text-align: center; 
+  height: 100px; 
+  width: 100px; 
+  background-color: #DEEBFF;
+  border: 5px solid #DEEBFF;
+  border-radius: 50%;
+}
+.fa-child::before{
+  color: #0065FC;
+  text-align: center; 
+  height: 100px; 
+  width: 100px; 
+  background-color: #DEEBFF;
+  border: 5px solid #DEEBFF;
+  border-radius: 50%;
+}
+.fa-gratipay::before{
+  color: #0065FC;
+  text-align: center; 
+  height: 100px; 
+  width: 100px; 
+  background-color: #DEEBFF;
+  border: 5px solid #DEEBFF;
+  border-radius: 50%; 
+}
+.fa-dog::before{
+  color: #0065FC;
+  text-align: center; 
+  height: 100px; 
+  width: 100px; 
+  background-color: #DEEBFF;
+  border: 5px solid #DEEBFF;
+  border-radius: 50%; 
 }

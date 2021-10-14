@@ -25,7 +25,7 @@
    
    <!-- MAIN -->
    <main class="main">    
-       
+      
       <!-- SEARCH -->
       <section class="search">
          <div class="titre">
@@ -36,7 +36,9 @@
          <div class="modulederecherche">
             <nav>
                <div class="map">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="iconemap">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
                   <input type="search" autofocus placeholder="Marseille, France" /> 
                   <button class="rechercher">
                      <a href="#" data-active="true">Rechercher</a>
@@ -46,15 +48,24 @@
             </nav>
          </div>
          <div class="menufiltres">
-            <h2>Filtres</h2> 
-            <i class="fas fa-money-bill-wave-alt"></i>
-            <button><a href="#" data-active="true">Economique</a></button>
-            <i class="fas fa-child"></i>
-            <button><a href="#" data-active="true">Familial</a></button>
-            <i class="fab fa-gratipay"></i>
-            <button><a href="#" data-active="true">Romantique</a></button>
-            <i class="fas fa-dog"></i>
-            <button><a href="#" data-active="true">Animaux autorisés</a></button>
+            <span>
+               <h2>Filtres</h2>
+            </span>
+            <span class="money">
+               <i class="fas fa-money-bill-wave-alt"></i>
+               <button><a href="#" data-active="true">Economique</a></button>
+            </span>
+            <span>
+               <i class="fas fa-child"></i>
+               <button><a href="#" data-active="true">Familial</a></button>
+            </span>
+            <span>
+               <i class="fab fa-gratipay"></i>
+               <button><a href="#" data-active="true">Romantique</a></button>
+            </span>
+            <span><i class="fas fa-dog"></i>
+               <button><a href="#" data-active="true">Animaux autorisés</a></button>
+            </span>
          </div>
          
          <!-- BODY -->
