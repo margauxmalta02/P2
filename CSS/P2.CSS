@@ -268,7 +268,7 @@ button{
   margin: 0;
 }
 .hebergementsamarseille article,
-.leslogementspopulaires article {
+#leslogementspopulaires.leslogementspopulaire article {
   background-color: white;
   padding: 10px;
   border-radius: 35px;
@@ -277,7 +277,7 @@ button{
   cursor: pointer;
   box-sizing: border-box;
   height: 200px;
-  width: 300px;
+  width: 250px;
 }
 .hebergementsamarseille figure {
   margin: 0;
@@ -290,16 +290,13 @@ button{
   max-height: 100%;
   border-radius: 16px 16px 0 0;
 }
-.hebergementsamarseille h2,
-.leslogementspopulaires h2 {
-  margin: 3px 12px 0 12px;
-}
 .hebergementsamarseille p,
-.leslogementspopulaires p {
+#leslogementspopulaires.leslogementspopulaire p {
   margin: 4PX 12px 4px 12px;
+  font-size: ;
 }
 .hebergementsamarseille ul,
-.leslogementspopulaires ul {
+#leslogementspopulaires.leslogementspopulaire ul {
   margin: 0 12px 4px 12px;
 }
 .fas[data-active="true"] {
@@ -311,25 +308,25 @@ button{
 .hebergementsamarseille {
   font-weight: bold;
 }
-.leslogementspopulaires {
+#leslogementspopulaires.leslogementspopulaire {
   padding: 32px;
   row-gap: 32px;
   display: grid;
   align-items: start;
   grid-template-rows: auto repeat(3,1fr);
 }
-.leslogementspopulaires h2 {
+#leslogementspopulaires.leslogementspopulaire h2 {
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
-.leslogementspopulaires a {
+#leslogementspopulaires.leslogementspopulaire a {
   display: flex;
   align-items: stretch;
   height: 100%;
   overflow: auto;
 }
-.leslogementspopulaires figure {
+#leslogementspopulaires.leslogementspopulaire figure {
   margin: 0;
   position: relative;
   min-height: 100%;
@@ -337,26 +334,31 @@ button{
   min-width: 33%;
   max-width: 33%;
 }
-.leslogementspopulaires img {
+#leslogementspopulaires.leslogementspopulaire img {
   border-radius: 16px 0 0 16px;
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.leslogementspopulaires {
+#leslogementspopulaires.leslogementspopulaire {
   display: flex;
   flex-direction: column;
 }
 .hebergementsamarseille {
   flex: 3;
 }
-.leslogementspopulaires{
+#leslogementspopulaires.leslogementspopulaire{
   flex: 1;
 }
 .hebergementsamarseille,
-.leslogementspopulaires {
+#leslogementspopulaires.leslogementspopulaires {
   background-color: #F2F2F2;
   border-radius: 24px;
   padding: 32px;
+}
+.lesactivitésamarseille{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
 }
