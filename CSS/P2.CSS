@@ -85,14 +85,15 @@ img{
 
 /* SEARCH */
 .search h1{
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: bolder;
   margin: auto;
 }
 .search p{
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 5px;
   margin-bottom: 10px;
+  font-weight: normal
 }
 .map{
   font-size: x-small;
@@ -118,6 +119,7 @@ img{
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 .search nav{
   font-size: x-small;
   border-style: initial;
@@ -127,8 +129,8 @@ img{
 }
 .search input{
   font-weight: bold;
-  padding-right: 0px white;
-  padding-left: 0px white;
+  padding-right: 0PX;
+  padding-left: 0PX;
 }
 .search button.rechercher{
   border-top-right-radius: 10px;
@@ -140,54 +142,61 @@ img{
 span.money{
   padding-left: 0px;
   margin-left: 10px;
-  height: 29px;
+  height: auto;
   padding-right: 2px;
   border-left-width: 1px;
-  border-left-style:initial;
+  border-left-style: initial;
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
   background-color: #F2F2F2;
+  width: auto;
+  border-radius: 50px;
 }
 span.romantique{
   padding-left: 0px;
   margin-left: 10px;
-  height: 29px;
+  height: auto;
   padding-right: 2px;
   border-left-width: 1px;
-  border-left-style:initial;
+  border-left-style: initial;
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
   background-color: #F2F2F2;
+  width: auto;
+  border-radius: 50px;
 }
 span.dog{
   padding-left: 0px;
   margin-left: 10px;
-  height: 29px;
+  height: auto;
   padding-right: 2px;
   border-left-width: 1px;
-  border-left-style:initial;
+  border-left-style: initial;
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
   background-color: #F2F2F2;
+  width: auto;
+  border-radius: 50px;
 }
 span.child{
   padding-left: 0px;
   margin-left: 10px;
-  height: 29px;
+  height: auto;
   padding-right: 2px;
   border-left-width: 1px;
-  border-left-style:initial;
+  border-left-style: initial;
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
   background-color: #F2F2F2;
+  width: auto;
+  border-radius: 50px;
 }
 .fa, .fab, .fad, .fal, .far, .fas {
   display: inline-block;
-  margin-left: 10px;
   margin-right: 5px;
   line-height: 1;
   text-align: center;
@@ -196,16 +205,20 @@ span.child{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
-  padding-right: 750px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .search h2, a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
-  inline-size: 130px;
+}
+.search a{
+  margin-left: -3px;
+  margin-bottom: 4px;
+  height: 70px;
+  width: 170px;
 }
 .filtres{
   border: 0px;
@@ -240,69 +253,72 @@ span.child{
   border-radius: 10px;
   margin: 10px;
 }
-button{
-  display: flex;
-  flex-wrap: nowrap;
-  color:black;
-  font-weight: bold;
-  border-style: none;
-}
+
 .menufiltres button{
-  margin-left: 0px;
-  border-color: #F2F2F2;
-  border:2px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 50px;
+  border-left:15px;
   background-color: white;
   border-color: #F2F2F2;
-  margin: 0px;
+  width: 140px;
+  height: 30px;
+  border: 1px solid #F2F2F2;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 4px;
+  padding-left: 0px;
 }
 .fa-money-bill-wave-alt::before{
   color: #0065FC;
-  width: 100px; 
-  height: 1000px; 
-  border: none; 
-  background-color: #DEEBFF; 
-  border-radius: 50px;
-  text-align: center; 
-}
-.fa-money-bill-wave-alt::before{
-  color: #0065FC;
-  text-align: center; 
-  height: 100px; 
-  width: 100px; 
+  text-align: center;
   background-color: #DEEBFF;
-  border: 5px solid #DEEBFF;
-  border-radius: 30px;
+  border: 9px solid #DEEBFF;
+  border-radius: 50px; 
+  height: 23px;
+}
+.fa-money-bill-wave-alt{
+  margin-top: 6px;
+  margin-right: 8px;
 }
 .fa-child::before{
   color: #0065FC;
-  text-align: center; 
-  height: 100px; 
-  width: 100px; 
+  text-align: center;
   background-color: #DEEBFF;
-  border: 5px solid #DEEBFF;
-  border-radius: 30px;
+  border: 9px solid #DEEBFF;
+  border-radius: 50px;
+  height: 23px;
+}
+.fa-child{
+  margin-top: 6px;
+  margin-right: 8px;
+  margin-left: -30px;
 }
 .fa-gratipay::before{
   color: #0065FC;
-  text-align: center; 
-  height: 100px; 
-  width: 100px; 
+  text-align: center;
   background-color: #DEEBFF;
-  border: 5px solid #DEEBFF;
-  border-radius: 30px; 
+  border: 9px solid #DEEBFF;
+  border-radius: 50px;
+  height: 23px;
+}
+.fa-gratipay{
+  margin-top: 6px;
+  margin-right: 8px;
+  margin-left: -6px;
 }
 .fa-dog::before{
   color: #0065FC;
-  text-align: center; 
-  height: 100px; 
-  width: 100px; 
+  text-align: center;
   background-color: #DEEBFF;
-  border: 5px solid #DEEBFF;
-  border-radius: 30px; 
+  border: 9px solid #DEEBFF;
+  border-radius: 50px;
+  height: 23px;
 }
-.hebergementsamarseille{
+.fa-dog{
+  margin-top: 6px;
+  margin-right: 8px;
+  margin-left: -23px;
+}
+.hebergementsamarseille {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 10px;
@@ -317,8 +333,8 @@ button{
 }
 .hebergementsamarseille h1 , #leslogementspopulaires.leslogementspopulaires h1{
   margin: 10px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: bolder;
 }
 .hebergementsamarseille h2 {
   margin: 4PX 8px 4px 8px;
@@ -326,8 +342,8 @@ button{
 }
 .hebergementsamarseille article {
   background-color: white;
-  padding: 10px;
-  border-radius: 35px;
+  padding: 5px;
+  border-radius: 15px;
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
   cursor: pointer;
@@ -344,19 +360,27 @@ button{
   max-width: 100%;
   width: 100%;
   max-height: 100%;
-  border-radius: 16px 16px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 .hebergementsamarseille p{
-  margin: 4PX 12px 4px 12px;
+  margin: 0PX 12px 8px 10px;
+  font-weight: normal
 }
-#leslogementspopulaires.leslogementspopulaire p{
-  margin: 4PX 12px 4px 12px;
+#leslogementspopulaires p{
+  margin: 6PX 12px 4px 2px;
+  font-weight: normal
 }
 .hebergementsamarseille ul{
-  margin: 0 12px 4px 12px;
+  margin: 0px 12px 3px 7px;
 }
-#leslogementspopulaires.leslogementspopulaire ul {
-  margin: 0 12px 4px 12px;
+.hebergementsamarseille li{
+  margin: 0px;
+}
+#leslogementspopulaires ul {
+  margin: 40px 15px 3px 0px;
+}
+#leslogementspopulaires li {
+  margin: 0px;
 }
 .fas[data-active="true"] {
   color: #0065FC;
@@ -366,14 +390,14 @@ button{
 }
 #leslogementspopulaires.leslogementspopulaires article {
   background-color: white;
-  padding: 10px;
-  border-radius: 35px;
+  padding: 5px;
+  border-radius: 15px;
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
   cursor: pointer;
   box-sizing: border-box;
-  height: 155px;
-  width: 350px;
+  height: 154px;
+  width: 304px;
   margin: 25px;
   margin-bottom: -6px;
   margin-inline: auto;
@@ -381,20 +405,24 @@ button{
 .fa-chart-line{
   float: right;
 }
-#leslogementspopulaires.leslogementspopulaire h2 {
-  margin: 10px;
+#leslogementspopulaires h2 {
   font-size: 15px;
   border-left: 35px;
   font-weight: bold;
   float: right;
+  text-align: left;
+  margin-top: 16px;
 }
 #leslogementspopulaires.leslogementspopulaires a {
-  display: flex;
-  align-items: stretch;
-  height: 100%;
   overflow: auto;
+  width: 161px;
+  height: 147px;
+  float: right;
+  display: flex;
+  flex-direction: column;
 }
 #leslogementspopulaires.leslogementspopulaires figure {
+  float: left;
   margin: 0;
   position: relative;
   min-height: 100%;
@@ -403,10 +431,10 @@ button{
   max-width: 33%;
 }
 #leslogementspopulaires.leslogementspopulaires img {
-  border-radius: 16px 0 0 16px;
+  border-radius: 15px 0 0 15px;
   position: left ;
-  width: 160px;
-  height: 170px;
+  width: 114px;
+  height: 143px;
   object-fit: cover;
 }
 #leslogementspopulaires.leslogementspopulaires {
@@ -415,8 +443,8 @@ button{
   background-color: #F2F2F2;
   border-radius: 24px;
   padding: 32px;
-  width: 350px;
-  height: auto;
+  width: 342px;
+  height: 550px;
 }
 .hebergementsamarseille {
   float: left;
@@ -431,6 +459,7 @@ button{
 }
 .aff{
   margin-top: 45px;
+  margin-left: 5px;
 }
 .lesactivitésamarseille{
   display: grid;
