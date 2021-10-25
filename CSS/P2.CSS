@@ -4,25 +4,20 @@
 }
 *{
   font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
-  margin: 0px;
 }
-
 body {
   margin: 0px;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 ul {
   list-style: none;
   display: inline-flex;
   padding: 0;
   margin: 0;
 }
-
 img{
   border-radius: 10px;
   width: 350px;
@@ -96,7 +91,7 @@ img{
   font-weight: normal
 }
 .map{
-  font-size: x-small;
+  font-size: 15px;
   display: flex;
   justify-content: left;
   margin: 0px;
@@ -106,8 +101,11 @@ img{
   border-left: none;
   border-right: none;
   padding: 0px;
-  padding-left: none;
-  padding-right: none;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  height: 30px;
+  border-top: #f2f2f2;
+  border-bottom: #F2F2F2;
 }
 .iconemap{
   background-color: #F2F2F2;
@@ -119,81 +117,26 @@ img{
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 .search nav{
-  font-size: x-small;
   border-style: initial;
   margin-top: 5px;
   margin-bottom: 10px;
   margin-block-end: initial;
 }
 .search input{
+  border-color: #F2F2F2;
+  border-width: 1px;
+  border-style:initial;
+  font-size: 13px;
   font-weight: bold;
-  padding-right: 0PX;
-  padding-left: 0PX;
 }
 .search button.rechercher{
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   color: white;
   background-color:#0065FC ;
+  border-style: none;
   align-items: center;
-}
-span.money{
-  padding-left: 0px;
-  margin-left: 10px;
-  height: auto;
-  padding-right: 2px;
-  border-left-width: 1px;
-  border-left-style: initial;
-  text-align: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: #F2F2F2;
-  width: auto;
-  border-radius: 50px;
-}
-span.romantique{
-  padding-left: 0px;
-  margin-left: 10px;
-  height: auto;
-  padding-right: 2px;
-  border-left-width: 1px;
-  border-left-style: initial;
-  text-align: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: #F2F2F2;
-  width: auto;
-  border-radius: 50px;
-}
-span.dog{
-  padding-left: 0px;
-  margin-left: 10px;
-  height: auto;
-  padding-right: 2px;
-  border-left-width: 1px;
-  border-left-style: initial;
-  text-align: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: #F2F2F2;
-  width: auto;
-  border-radius: 50px;
-}
-span.child{
-  padding-left: 0px;
-  margin-left: 10px;
-  height: auto;
-  padding-right: 2px;
-  border-left-width: 1px;
-  border-left-style: initial;
-  text-align: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: #F2F2F2;
-  width: auto;
-  border-radius: 50px;
 }
 .fa, .fab, .fad, .fal, .far, .fas {
   display: inline-block;
@@ -233,6 +176,19 @@ span.child{
   padding: normal;
   margin: 10px;
 }
+.button.money{
+  padding-right: 10px;
+  text-align: center;
+}
+.button.dog{
+  text-align: center;
+}
+.button.child{
+  text-align: center;
+}
+.button.gratipay{
+  text-align: center;
+}
 .child{
   display: flex;
   justify-content: flex-start;
@@ -253,19 +209,19 @@ span.child{
   border-radius: 10px;
   margin: 10px;
 }
-
 .menufiltres button{
+  display: inline-block;
   border-radius: 50px;
   border-left:15px;
   background-color: white;
   border-color: #F2F2F2;
-  width: 140px;
   height: 30px;
   border: 1px solid #F2F2F2;
   margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 4px;
   padding-left: 0px;
+  margin-left: 30px;
 }
 .fa-money-bill-wave-alt::before{
   color: #0065FC;
@@ -274,10 +230,8 @@ span.child{
   border: 9px solid #DEEBFF;
   border-radius: 50px; 
   height: 23px;
-}
-.fa-money-bill-wave-alt{
-  margin-top: 6px;
-  margin-right: 8px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 .fa-child::before{
   color: #0065FC;
@@ -286,11 +240,8 @@ span.child{
   border: 9px solid #DEEBFF;
   border-radius: 50px;
   height: 23px;
-}
-.fa-child{
-  margin-top: 6px;
-  margin-right: 8px;
-  margin-left: -30px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 .fa-gratipay::before{
   color: #0065FC;
@@ -299,11 +250,8 @@ span.child{
   border: 9px solid #DEEBFF;
   border-radius: 50px;
   height: 23px;
-}
-.fa-gratipay{
-  margin-top: 6px;
-  margin-right: 8px;
-  margin-left: -6px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 .fa-dog::before{
   color: #0065FC;
@@ -312,11 +260,8 @@ span.child{
   border: 9px solid #DEEBFF;
   border-radius: 50px;
   height: 23px;
-}
-.fa-dog{
-  margin-top: 6px;
-  margin-right: 8px;
-  margin-left: -23px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 .hebergementsamarseille {
   display: grid;
@@ -461,13 +406,40 @@ span.child{
   margin-top: 45px;
   margin-left: 5px;
 }
-.lesactivitésamarseille{
+.lesactivitésamarseille header{
+  grid-column: 1/-1;
+}
+.lesactivitésamarseille {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,3fr);
   grid-gap: 10px;
 }
 .lesactivitésamarseille h1{
   margin: 10px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.vieuxport {
+  grid-column: 1;
+  grid-row: 2/3;
+}
+.fortdep{
+  grid-column: 2;
+  grid-row: 2;
+}
+.Frioul {
+  grid-column: 2;
+  grid-row: 3;
+}
+.calanques {
+  grid-column: 3;
+  grid-row: 2/3;
+}
+.ndlg {
+  grid-column: 4;
+  grid-row: 2;
+}
+.lgt {
+  grid-column: 4;
+  grid-row: 3;
 }
