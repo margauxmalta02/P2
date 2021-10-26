@@ -1,477 +1,513 @@
-@font-face {
-  font-family: 'raleway';
-  src: url(../Font/Raleway-Regular.ttf) format('truetype')
-}
-*{
-  font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
-}
-body {
-  margin: 0px;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-  display: inline-flex;
-  padding: 0;
-  margin: 0;
-}
-img{
-  border-radius: 10px;
-  width: 350px;
-  height: 200px;
-}
-
-/* HEADER */
-.header {
-  grid-template-columns: auto 1fr auto auto;
-  grid-template-areas: "logo . navbar button";
-  display: grid;
-  max-width: 1440px;
-  margin: auto;
-  font-size: 14px;
-  margin-bottom: 25px;
-}
-.header img {
-  grid-area: logo;
-  height: 30px;
-  width: 60px;
-  margin-left: 30px;
-  margin-right: 600px;
-  margin-top: 15px;
-  float: left
-}
-.header nav {
-  grid-area: navbar;
-  float: right;
-}
-.header ul {
-  margin: 1.2rem 0;
-  width: 100%;
-  text-align: center;
-}
-.header li {
-  padding: 0 1.2rem;
-}
-.header nav a {
-  padding: 1rem 0;
-  font-weight: 500;
-  text-align: center;
-  transition-duration: 0.1s;
-  border-bottom: 3px transparent solid;
-}
-.header nav a:hover {
-  border-top: 3px solid #0065FC;
-  color: #0065FC;
-}
-.header nav a[data-active="true"] {
-  border-top: 3px solid #0065FC;
-  color: #0065FC;
-  
-  /* MAIN */
-}
-.main {
-  max-width: 1440px;
-  margin: auto;
-  padding: 0 2rem;
-  box-sizing: border-box;
-}
-
-/* SEARCH */
-.search h1{
-  font-size: 22px;
-  font-weight: bolder;
-  margin: auto;
-}
-.search p{
-  font-size: 13px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-weight: normal
-}
-.map{
-  font-size: 15px;
-  display: flex;
-  justify-content: left;
-  margin: 0px;
-  border-radius: 10px;
-  border-color: white;
-  border-style: none;
-  border-left: none;
-  border-right: none;
-  padding: 0px;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  height: 35px;
-  border-top: #f2f2f2;
-  border-bottom: #F2F2F2;
-}
-.iconemap{
-  background-color: #F2F2F2;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.search nav{
-  border-style: initial;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  margin-block-end: initial;
-}
-.search input{
-  border-color: #F2F2F2;
-  border-width: 1px;
-  border-style:initial;
-  font-size: 13px;
-  font-weight: bold;
-  padding-left: 10px;
-}
-.search button.rechercher{
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  color: white;
-  background-color:#0065FC ;
-  border-style: none;
-  align-items: center;
-  margin: 5px;
-}
-.fa, .fab, .fad, .fal, .far, .fas {
-  display: inline-block;
-  margin-right: 5px;
-  line-height: 1;
-  text-align: center;
-}
-.menufiltres{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  font-size: 17px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.search h2{
-  font-size: 13px;
-  font-weight: bold;
-}
-.filtres{
-  border: 0px;
-  margin: auto;
-}
-.money{
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  border-radius: 10px;
-  border: auto;
-  padding: normal;
-  margin: 10px;
-}
-.button.money{
-  padding-right: 10px;
-  text-align: center;
-}
-.button.dog{
-  text-align: center;
-}
-.button.child{
-  text-align: center;
-}
-.button.gratipay{
-  text-align: center;
-}
-.child{
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  border-radius: 10px;
-  margin: 10px;
-}
-.romantique{
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  border-radius: 10px;
-  margin: 10px;
-}
-.dog{
-  display: flex;
-  align-items: left;
-  border-radius: 10px;
-  margin: 10px;
-}
-.menufiltres button{
-  display: inline-block;
-  border-radius: 50px;
-  border-left:15px;
-  background-color: white;
-  border-color: #F2F2F2;
-  height: 30px;
-  border: 1px solid #F2F2F2;
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-bottom: 4px;
-  padding-left: 0px;
-  margin-left: 30px;
-}
-.fa-money-bill-wave-alt::before{
-  color: #0065FC;
-  text-align: center;
-  background-color: #DEEBFF;
-  border: 9px solid #DEEBFF;
-  border-radius: 50px; 
-  height: 23px;
-  padding-right: 3px;
-  padding-left: 3px;
-}
-.fa-child::before{
-  color: #0065FC;
-  text-align: center;
-  background-color: #DEEBFF;
-  border: 9px solid #DEEBFF;
-  border-radius: 50px;
-  height: 23px;
-  padding-right: 3px;
-  padding-left: 3px;
-}
-.fa-gratipay::before{
-  color: #0065FC;
-  text-align: center;
-  background-color: #DEEBFF;
-  border: 9px solid #DEEBFF;
-  border-radius: 50px;
-  height: 23px;
-  padding-right: 3px;
-  padding-left: 3px;
-}
-.fa-dog::before{
-  color: #0065FC;
-  text-align: center;
-  background-color: #DEEBFF;
-  border: 9px solid #DEEBFF;
-  border-radius: 50px;
-  height: 23px;
-  padding-right: 3px;
-  padding-left: 3px;
-}
-.hebergementsamarseille {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 10px;
-  height: 550px;
-  width: 900px;
-  background-color: #F2F2F2;
-  border-radius: 24px;
-  padding: 32px;
-}
-.hebergementsamarseille header {
-  grid-column: 1/-1;
-}
-.hebergementsamarseille h1 , #leslogementspopulaires.leslogementspopulaires h1{
-  margin: 10px;
-  font-size: 22px;
-  font-weight: bolder;
-}
-.hebergementsamarseille h2 {
-  margin: 4PX 8px 4px 8px;
-  font-size: 15px;
-}
-.hebergementsamarseille article {
-  background-color: white;
-  padding: 5px;
-  border-radius: 15px;
-  box-shadow: 0 0 16px #0000002e;
-  transition-duration: 0.1s;
-  cursor: pointer;
-  box-sizing: border-box;
-  height: 200px;
-  width: 250px;
-  margin-bottom: 20px;
-}
-.hebergementsamarseille figure {
-  margin: 0;
-}
-.hebergementsamarseille img {
-  height: 112px;
-  object-fit: cover;
-  max-width: 100%;
-  width: 100%;
-  max-height: 100%;
-  border-radius: 15px 15px 0 0;
-}
-.hebergementsamarseille p{
-  margin: 0PX 12px 8px 10px;
-  font-weight: normal
-}
-#leslogementspopulaires p{
-  margin: -30PX 0px 20px 2px;
-  font-weight: normal
-}
-.hebergementsamarseille ul{
-  margin: 0px 12px 3px 7px;
-}
-.hebergementsamarseille li{
-  margin: 0px;
-}
-#leslogementspopulaires ul {
-  margin: 17px 15px 3px 0px;
-}
-#leslogementspopulaires li {
-  margin: 0px;
-}
-.fas[data-active="true"] {
-  color: #0065FC;
-}
-.fas[data-active="false"] {
-  color: #d9d9d9;
-}
-#leslogementspopulaires.leslogementspopulaires article {
-  background-color: white;
-  padding: 5px;
-  border-radius: 15px;
-  box-shadow: 0 0 16px #0000002e;
-  transition-duration: 0.1s;
-  cursor: pointer;
-  box-sizing: border-box;
-  height: 145px;
-  width: 355px;
-  margin: 30px;
-  margin-bottom: -6px;
-  margin-inline: auto;
-}
-.fa-chart-line{
-  float: right;
-}
-#leslogementspopulaires h2 {
-  font-size: 15px;
-  border-left: 35px;
-  font-weight: bold;
-  float: right;
-  text-align: left;
-  margin-top: 16px;
-  width: 165px;
-  margin-bottom: 35.45px;
-}
-#leslogementspopulaires.leslogementspopulaires a {
-  overflow: auto;
-  width: 190px;
-  height: 140px;
-  float: right;
-  display: flex;
-  flex-direction: column;
-}
-#leslogementspopulaires.leslogementspopulaires figure {
-  float: left;
-  margin: 0;
-  position: relative;
-  min-height: 100%;
-  width: 33%;
-  min-width: 33%;
-  max-width: 33%;
-}
-#leslogementspopulaires.leslogementspopulaires img {
-  border-radius: 15px 0 0 15px;
-  position: left ;
-  width: 132px;
-  height: 135px;
-  object-fit: cover;
-}
-#leslogementspopulaires.leslogementspopulaires {
-  display: flex;
-  flex-direction: column;
-  background-color: #F2F2F2;
-  border-radius: 24px;
-  padding: 32px;
-  width: 342px;
-  height: 550px;
-}
-.hebergementsamarseille {
-  float: left;
-  width: 60%;
-  margin-right: 20px;
-  display: grid;
-  align-content: baseline;
-}
-#leslogementspopulaires.leslogementspopulaires{
-  flex: 1;
-  margin-left: 65%;
-}
-.aff{
-  margin-top: 25px;
-  margin-left: 5px;
-}
-.lesactivitésamarseille header{
-  grid-column: 1/-1;
-}
-.lesactivitésamarseille {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 20% 40% 40%;
-  overflow-wrap: initial;
-  width: 1317px;
-}
-.lesactivitésamarseille h1{
-  margin: 10px;
-  font-size: 22px;
-  font-weight: bolder;
-}
-.lesactivitésamarseille article{
-  margin: 20px ;
-  height: 330px;
-}
-.lesactivitésamarseille img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.vieuxport {
-  grid-column: 1;
-  grid-row: 2/3;
-  float: left;
-}
-.fortdep{
-  grid-column: 2;
-  grid-row: 2;
-  float: left;
-}
-.Frioul {
-  grid-column: 2;
-  grid-row: 3;
-  float: left;
-}
-.calanques {
-  grid-column: 3;
-  grid-row: 2/3;
-  float: left;
-}
-.ndlg {
-  grid-column: 4;
-  grid-row: 2;
-  float: left;
-}
-.lgt {
-  grid-column: 4;
-  grid-row: 3;
-  float: left;
-}
-footer{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-}
-.a.apropos{
-  grid-columns: 1;
-  grid-row: 1;
-}
-.a.noshebergements {
-  grid-columns: 2;
-  grid-row: 1;
-}
-.a.assistance {
-  grid-columns: 3;
-  grid-row: 1;
+  @font-face {
+    font-family: 'raleway';
+    src: url(../Font/Raleway-Regular.ttf) format('truetype')
+  }
+    *{
+      font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+    }
+    body {
+      margin: 0px;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+      display: inline-flex;
+      padding: 0;
+      margin: 0;
+    }
+    img{
+      border-radius: 10px;
+      width: 350px;
+      height: 200px;
+    }
+    
+    /* HEADER */
+    .header {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-areas: "logo . navbar button";
+      display: grid;
+      max-width: 1440px;
+      margin: auto;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    .header img {
+      grid-area: logo;
+      height: 30px;
+      width: 60px;
+      margin-left: 50px;
+      margin-right: 600px;
+      margin-top: 15px;
+      float: left
+    }
+    .header nav {
+      margin-right: 45px;
+      grid-area: navbar;
+      float: right;
+    }
+    .header ul {
+      margin: 19px 0;
+      width: 100%;
+      text-align: center;
+    }
+    .header li {
+      padding: 0 1.2rem;
+    }
+    .header nav a {
+      padding: 16px 0;
+      font-weight: 500;
+      text-align: center;
+      transition-duration: 0.1s;
+      border-bottom: 3px transparent solid;
+    }
+    .header nav a:hover {
+      border-top: 3px solid #0065FC;
+      color: #0065FC;
+    }
+    .header nav a[data-active="true"] {
+      border-top: 3px solid #0065FC;
+      color: #0065FC;
+      
+      /* MAIN */
+    }
+    .main {
+      max-width: 1440px;
+      margin: auto;
+      padding: 0 32px;
+      box-sizing: border-box;
+    }
+    
+    /* SEARCH */
+    .search h1{
+      font-size: 22px;
+      font-weight: bolder;
+      margin: auto;
+    }
+    .search p{
+      font-size: 13px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-weight: normal
+    }
+    .map{
+      font-size: 15px;
+      display: flex;
+      justify-content: left;
+      margin: 0px;
+      border-radius: 10px;
+      border-color: white;
+      border-style: none;
+      border-left: none;
+      border-right: none;
+      padding: 0px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+      height: 35px;
+      border-top: #f2f2f2;
+      border-bottom: #F2F2F2;
+    }
+    .iconemap{
+      background-color: #F2F2F2;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 5px;
+    }
+    .search nav{
+      border-style: initial;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      margin-block-end: initial;
+    }
+    .search input{
+      border-color: #F2F2F2;
+      border-width: 1px;
+      border-style:initial;
+      font-size: 13px;
+      font-weight: bold;
+      padding-left: 10px;
+    }
+    .search button.rechercher{
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: white;
+      background-color:#0065FC ;
+      border-style: none;
+      align-items: center;
+      margin: 5px;
+    }
+    .fa, .fab, .fad, .fal, .far, .fas {
+      display: inline-block;
+      margin-right: 5px;
+      line-height: 1;
+      text-align: center;
+    }
+    .menufiltres{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-size: 17px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      overflow:hidden;
+    }
+    .search h2{
+      font-size: 15px;
+      font-weight: bold;
+      margin: 5px;
+    }
+    .filtres{
+      border: 0px;
+      margin: auto;
+    }
+    .button.money{
+      padding-right: 10px;
+      text-align: center;
+    }
+    .button.dog{
+      text-align: center;
+    }
+    .button.child{
+      text-align: center;
+    }
+    .button.gratipay{
+      text-align: center;
+    }
+    .money{
+      display: flex;
+      justify-content: flex-start;
+      align-items: left;
+      border-radius: 10px;
+      border: auto;
+      margin: 10px;
+    }
+    .child{
+      display: flex;
+      justify-content: flex-start;
+      align-items: left;
+      border-radius: 10px;
+      border: auto;
+      margin: 10px;
+    }
+    .romantique{
+      display: flex;
+      justify-content: flex-start;
+      align-items: left;
+      border-radius: 10px;
+      border: auto;
+      margin: 10px;
+    }
+    .dog{
+      display: flex;
+      justify-content: flex-start;
+      align-items: left;
+      border-radius: 10px;
+      border: auto;
+      margin: 10px;;
+    }
+    .menufiltres button{
+      display: inline-block;
+      border-radius: 50px;
+      border-left:15px;
+      background-color: white;
+      border-color: #F2F2F2;
+      height: 30px;
+      border: 1px solid #F2F2F2;
+      margin-top: 0px;
+      padding-top: 0px;
+      padding-bottom: 4px;
+      padding-left: 0px;
+      margin-left: 30px;
+    }
+    .fa-money-bill-wave-alt::before{
+      color: #0065FC;
+      text-align: center;
+      background-color: #DEEBFF;
+      border: 7px solid #DEEBFF;
+      border-radius: 50px;
+      padding: 2px;
+    }
+    .fa-child::before{
+      color: #0065FC;
+      text-align: center;
+      background-color: #DEEBFF;
+      border: 7px solid #DEEBFF;
+      border-radius: 50px;
+      padding: 2px;
+    }
+    .fa-gratipay::before{
+      color: #0065FC;
+      text-align: center;
+      background-color: #DEEBFF;
+      border: 7px solid #DEEBFF;
+      border-radius: 50px;
+      padding: 2px;
+    }
+    .fa-dog::before{
+      color: #0065FC;
+      text-align: center;
+      background-color: #DEEBFF;
+      border: 7px solid #DEEBFF;
+      border-radius: 50px;
+      padding: 2px;
+    }
+    .hebergementsamarseille {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 10px;
+      height: 550px;
+      width: 900px;
+      background-color: #F2F2F2;
+      border-radius: 24px;
+      padding: 32px;
+    }
+    .hebergementsamarseille header {
+      grid-column: 1/-1;
+    }
+    .hebergementsamarseille h1 , #leslogementspopulaires.leslogementspopulaires h1{
+      margin: 10px;
+      font-size: 22px;
+      font-weight: bolder;
+    }
+    .hebergementsamarseille h2 {
+      margin: 4PX 8px 4px 8px;
+      font-size: 15px;
+    }
+    .hebergementsamarseille article {
+      background-color: white;
+      padding: 5px;
+      border-radius: 15px;
+      box-shadow: 0 0 16px #0000002e;
+      transition-duration: 0.1s;
+      cursor: pointer;
+      box-sizing: border-box;
+      height: 200px;
+      width: 250px;
+      margin-bottom: 20px;
+    }
+    .hebergementsamarseille figure {
+      margin: 0;
+    }
+    .hebergementsamarseille img {
+      height: 112px;
+      object-fit: cover;
+      max-width: 100%;
+      width: 100%;
+      max-height: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+    .hebergementsamarseille p{
+      margin: 0PX 12px 8px 10px;
+      font-weight: normal
+    }
+    #leslogementspopulaires p{
+      margin: -30PX 0px 20px 2px;
+      font-weight: normal
+    }
+    .hebergementsamarseille ul{
+      margin: 0px 12px 3px 7px;
+    }
+    .hebergementsamarseille li{
+      margin: 0px;
+    }
+    #leslogementspopulaires ul {
+      margin: 17px 15px 3px 0px;
+    }
+    #leslogementspopulaires li {
+      margin: 0px;
+    }
+    .fas[data-active="true"] {
+      color: #0065FC;
+    }
+    .fas[data-active="false"] {
+      color: #d9d9d9;
+    }
+    #leslogementspopulaires.leslogementspopulaires article {
+      background-color: white;
+      padding: 5px;
+      border-radius: 15px;
+      box-shadow: 0 0 16px #0000002e;
+      transition-duration: 0.1s;
+      cursor: pointer;
+      box-sizing: border-box;
+      height: 145px;
+      width: 355px;
+      margin: 25px;
+      margin-bottom: -6px;
+    }
+    .fa-chart-line{
+      float: right;
+    }
+    #leslogementspopulaires h2 {
+      font-size: 15px;
+      border-left: 35px;
+      font-weight: bold;
+      float: right;
+      text-align: left;
+      margin-top: 16px;
+      width: 165px;
+      margin-bottom: 35px;
+    }
+    #leslogementspopulaires.leslogementspopulaires a {
+      overflow: auto;
+      width: 190px;
+      height: 140px;
+      float: right;
+      display: flex;
+      flex-direction: column;
+    }
+    #leslogementspopulaires.leslogementspopulaires figure {
+      float: left;
+      margin: 0;
+      position: relative;
+      min-height: 100%;
+      width: 33%;
+      min-width: 33%;
+      max-width: 33%;
+    }
+    #leslogementspopulaires.leslogementspopulaires img {
+      border-radius: 15px 0 0 15px;
+      position: left ;
+      width: 132px;
+      height: 135px;
+      object-fit: cover;
+    }
+    #leslogementspopulaires.leslogementspopulaires {
+      display: flex;
+      flex-direction: column;
+      background-color: #F2F2F2;
+      border-radius: 24px;
+      padding: 32px;
+      width: 342px;
+      height: 550px;
+    }
+    .hebergementsamarseille {
+      float: left;
+      width: 60%;
+      margin-right: 20px;
+      display: grid;
+      align-content: baseline;
+    }
+    #leslogementspopulaires.leslogementspopulaires{
+      flex: 1;
+      margin-right: 0px;
+      height: 550px;
+      width: 380px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 67%;
+    }
+    .aff{
+      margin-top: 25px;
+      margin-left: 5px;
+    }
+    .lesactivitésamarseille header{
+      grid-column: 1/-1;
+      height: 40px;
+    }
+    .lesactivitésamarseille{
+      max-width: 1440px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0px 0px;
+      box-sizing: border-box;
+    }
+    .lesactivitésamarseille {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 20% 40% 40%;
+      overflow-wrap: initial;
+      width: 1317px;
+    }
+    .lesactivitésamarseille h1{
+      margin: 10px;
+      font-size: 22px;
+      font-weight: bolder;
+    }
+    .lesactivitésamarseille h2{
+      font-size: 15px;
+    }
+    .lesactivitésamarseille article{
+      margin: 20px ;
+      height: 330px;
+    }
+    .lesactivitésamarseille img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .vieuxport {
+      grid-column: 1;
+      grid-row: 2/3;
+      float: left;
+    }
+    .fortdep{
+      grid-column: 2;
+      grid-row: 2;
+      float: left;
+    }
+    .Frioul {
+      grid-column: 2;
+      grid-row: 3;
+      float: left;
+    }
+    .calanques {
+      grid-column: 3;
+      grid-row: 2/3;
+      float: left;
+    }
+    .ndlg {
+      grid-column: 4;
+      grid-row: 2;
+      float: left;
+    }
+    .lgt {
+      grid-column: 4;
+      grid-row: 3;
+      float: left;
+    }
+    
+    /* FOOTER */
+    footer{
+      background-color: #F2F2F2;
+      max-width: 1440px;
+      margin: auto;
+      padding: 0 32px;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+    .a.apropos{
+      grid-columns: 1;
+      grid-row: 1;
+    }
+    .a.noshebergements {
+      grid-columns: 2;
+      grid-row: 1;
+    }
+    .a.assistance {
+      grid-columns: 3;
+      grid-row: 1;
+    }
+    footer h3{
+      font-size: 15px;
+      font-weight:bold ;
+      margin-left: 10px;
+    }
+    footer ul{
+      display: flex;
+      flex-direction: column;
+    }
+    footer li{
+      margin: 10px;
+    }
