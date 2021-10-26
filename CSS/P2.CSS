@@ -31,7 +31,8 @@ img{
   display: grid;
   max-width: 1440px;
   margin: auto;
-  font-size: xx-small;
+  font-size: 14px;
+  margin-bottom: 25px;
 }
 .header img {
   grid-area: logo;
@@ -102,8 +103,8 @@ img{
   border-right: none;
   padding: 0px;
   margin-top: 15px;
-  margin-bottom: 30px;
-  height: 30px;
+  margin-bottom: 40px;
+  height: 35px;
   border-top: #f2f2f2;
   border-bottom: #F2F2F2;
 }
@@ -129,6 +130,7 @@ img{
   border-style:initial;
   font-size: 13px;
   font-weight: bold;
+  padding-left: 10px;
 }
 .search button.rechercher{
   border-top-right-radius: 10px;
@@ -137,6 +139,7 @@ img{
   background-color:#0065FC ;
   border-style: none;
   align-items: center;
+  margin: 5px;
 }
 .fa, .fab, .fad, .fal, .far, .fas {
   display: inline-block;
@@ -153,15 +156,9 @@ img{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.search h2, a {
+.search h2{
   font-size: 13px;
   font-weight: bold;
-}
-.search a{
-  margin-left: -3px;
-  margin-bottom: 4px;
-  height: 70px;
-  width: 170px;
 }
 .filtres{
   border: 0px;
@@ -295,6 +292,7 @@ img{
   box-sizing: border-box;
   height: 200px;
   width: 250px;
+  margin-bottom: 20px;
 }
 .hebergementsamarseille figure {
   margin: 0;
@@ -312,7 +310,7 @@ img{
   font-weight: normal
 }
 #leslogementspopulaires p{
-  margin: 6PX 12px 4px 2px;
+  margin: -30PX 0px 20px 2px;
   font-weight: normal
 }
 .hebergementsamarseille ul{
@@ -322,7 +320,7 @@ img{
   margin: 0px;
 }
 #leslogementspopulaires ul {
-  margin: 40px 15px 3px 0px;
+  margin: 17px 15px 3px 0px;
 }
 #leslogementspopulaires li {
   margin: 0px;
@@ -341,9 +339,9 @@ img{
   transition-duration: 0.1s;
   cursor: pointer;
   box-sizing: border-box;
-  height: 154px;
-  width: 304px;
-  margin: 25px;
+  height: 145px;
+  width: 355px;
+  margin: 30px;
   margin-bottom: -6px;
   margin-inline: auto;
 }
@@ -357,11 +355,13 @@ img{
   float: right;
   text-align: left;
   margin-top: 16px;
+  width: 165px;
+  margin-bottom: 35.45px;
 }
 #leslogementspopulaires.leslogementspopulaires a {
   overflow: auto;
-  width: 161px;
-  height: 147px;
+  width: 190px;
+  height: 140px;
   float: right;
   display: flex;
   flex-direction: column;
@@ -378,8 +378,8 @@ img{
 #leslogementspopulaires.leslogementspopulaires img {
   border-radius: 15px 0 0 15px;
   position: left ;
-  width: 114px;
-  height: 143px;
+  width: 132px;
+  height: 135px;
   object-fit: cover;
 }
 #leslogementspopulaires.leslogementspopulaires {
@@ -403,7 +403,7 @@ img{
   margin-left: 65%;
 }
 .aff{
-  margin-top: 45px;
+  margin-top: 25px;
   margin-left: 5px;
 }
 .lesactivitésamarseille header{
@@ -411,35 +411,67 @@ img{
 }
 .lesactivitésamarseille {
   display: grid;
-  grid-template-columns: repeat(4,3fr);
-  grid-gap: 10px;
+  grid-gap: 15px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 40% 40%;
+  overflow-wrap: initial;
+  width: 1317px;
 }
 .lesactivitésamarseille h1{
   margin: 10px;
   font-size: 22px;
   font-weight: bolder;
 }
+.lesactivitésamarseille article{
+  margin: 20px ;
+  height: 330px;
+}
+.lesactivitésamarseille img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .vieuxport {
   grid-column: 1;
   grid-row: 2/3;
+  float: left;
 }
 .fortdep{
   grid-column: 2;
   grid-row: 2;
+  float: left;
 }
 .Frioul {
   grid-column: 2;
   grid-row: 3;
+  float: left;
 }
 .calanques {
   grid-column: 3;
   grid-row: 2/3;
+  float: left;
 }
 .ndlg {
   grid-column: 4;
   grid-row: 2;
+  float: left;
 }
 .lgt {
   grid-column: 4;
   grid-row: 3;
+  float: left;
 }
+footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.a.apropos{
+  grid-columns: 1;
+  grid-row: 1;
+}
+.a.noshebergements {
+  grid-columns: 2;
+  grid-row: 1;
+}
+.a.assistance {
+  grid-columns: 3;
+  grid-row: 1;
