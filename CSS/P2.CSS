@@ -26,19 +26,12 @@
       padding: 0;
       margin: 0;
     }
-    img{
-      border-radius: 10px;
-      width: 350px;
-      height: 200px;
-    }
-    
     /* HEADER */
     .header {
       display: flex;
       flex-direction: row;
       max-width: 1440px;
       font-size: 14px;
-      margin-inline: auto;
     }
     .header img {
       height: 30px;
@@ -275,8 +268,9 @@
       display: flex;
       flex-direction: row;
       margin-block: 15px;
+      margin-top: 15px;
     }
-
+    
     /* BODY */
     .article{
       display:flex;
@@ -384,6 +378,12 @@
       width: 165px;
       margin-bottom: 35px;
     }
+    .leslogementspopulaires img{
+      border-bottom-left-radius: 10px;
+      width: 145px;
+      height: 135px;
+      border-top-left-radius: 10px;
+    }
     .leslogementspopulaires a {
       overflow: auto;
       width: 190px;
@@ -401,86 +401,134 @@
       min-width: 33%;
       max-width: 33%;
     }
-    .leslogementspopulaires img {
-      border-radius: 15px 0 0 15px;
-      position: left ;
-      width: 132px;
-      height: 135px;
-      object-fit: cover;
-    }
-    .leslogementspopulaires {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #F2F2F2;
-      border-radius: 24px;
-      margin-inline: auto;
-      width: 400px;
-      height: 610px;
-    }
-    .hebergementsamarseille {
-      width: 800px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      background-color: #F2F2F2;
-      border-radius: 24px;
-      float: left;
-      height: 590px;
-      border:10px;
-      border-style: solid;
-      border-color: #F2F2F2;
-      margin-inline: auto;
-      margin: 0px;
-    }
-    .lesactiviteamarseille{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      
-      border: 10px;
-    }
-    .lesactiviteamarseille h1{
-      margin-left: 25px;
-      font-size: 22px;
-      font-weight: bolder;
-      flex-basis: 100%;
-    }
-    
-    /* FOOTER */
-    footer{
-      background-color: #F2F2F2;
-      max-width: 1440px;
-      margin: auto;
-      padding: 0 32px;
-      box-sizing: border-box;
-      display: ;
-      grid-template-columns: repeat(3,1fr);
-    }
-    .a.apropos{
-      grid-columns: 1;
-      grid-row: 1;
-    }
-    .a.noshebergements {
-      grid-columns: 2;
-      grid-row: 1;
-    }
-    .a.assistance {
-      grid-columns: 3;
-      grid-row: 1;
-    }
-    footer h3{
-      font-size: 15px;
-      font-weight:bold ;
-      margin-left: 10px;
-    }
-    footer ul{
-      display: flex;
-      flex-direction: column;
-    }
-    footer li{
-      margin: 10px;
-    }
   }
+  .leslogementspopulaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    margin-inline: auto;
+    width: 400px;
+    height: 610px;
+  }
+  .hebergementsamarseille {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    float: left;
+    height: 590px;
+    border:10px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    margin-inline: auto;
+    margin: 0px;
+  }
+  .lesactiviteamarseille{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: flex-end;
+  }
+  .lesactiviteamarseille h1{
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bolder;
+    align-self: flex-start;
+  }
+  .lesactiviteamarseille article{
+    background-color: white;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 252px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .lesactiviteamarseille figure{
+    margin: 1px;
+  }
+  .lesactiviteamarseille img{
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .lesactiviteamarseille h2{
+    font-size: 15px;
+    font-stretch: expanded;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  #vieuxport, #calanques {
+    height: 400px;
+  }
+  #vieuxport img, #calanques img {
+    height: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  #fort, #lgt {
+    height: 200px;
+  }
+  #fort img, #lgt img {
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  #frioul, #notredame{
+    height: 150px;
+  }
+  #frioul img, #notredame img{
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  /* FOOTER */
+  footer{
+    background-color: #F2F2F2;
+    padding: 0 32px;
+    box-sizing: border-box;
+    display: flex ;
+    flex-direction: row;
+    height: 1290px;
+  }
+  footer div{
+    height: 190.45px;
+    width: 390px;
+  }
+  .a.apropos{
+    display: flex;
+    flex-direction: column;  
+  }
+  .a.noshebergements {
+    display: flex;
+    flex-direction: column;  
+  }
+  .a.assistance {
+    display: flex;
+    flex-direction: column;  
+  }
+  footer h3{
+    font-size: 15px;
+    font-weight:bold ;
+    margin-left: 10px;
+  }
+  footer ul{
+    display: flex;
+    flex-direction: column;
+  }
+  footer li{
+    margin: 10px;
+  }
+}
