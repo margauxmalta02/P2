@@ -11,9 +11,9 @@
       flex-direction: column;
       flex-wrap: nowrap;
       margin: 0px;
-      margin-inline: auto;
+      height: auto;
+      overflow-x:hidden 
     }
-    
     a {
       color: inherit;
       text-decoration: none;
@@ -30,6 +30,7 @@
     .header {
       display: flex;
       flex-direction: row;
+      flex-basis: 100%;
       max-width: 1440px;
       font-size: 14px;
     }
@@ -49,7 +50,7 @@
       text-align: center;
     }
     .header li {
-      padding: 0 1.2rem;
+      padding: 0 19px;
     }
     .header nav a {
       padding: 16px 0;
@@ -109,8 +110,8 @@
     }
     .iconemap{
       background-color: #F2F2F2;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
       align-items: center;
       padding-left: 15px;
       padding-right: 10px;
@@ -130,15 +131,15 @@
       border-style:initial;
       font-size: 15px;
       font-weight: bold;
-      padding: 0 1.5rem;
-      width: 14rem;
+      padding: 0 16px;
+      width: 224px;
       border-top: #F2F2F2 1px solid;
       border-bottom: #F2F2F2 1px solid;
       border-right: none;
     }
     .search button.rechercher{
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
       color: white;
       background-color:#0065FC ;
       border-style: none;
@@ -161,7 +162,6 @@
       flex-wrap: nowrap;
       font-size: 17px;
       font-weight: bold;
-      margin-inline: auto;
       overflow:hidden;
     }
     .search h2{
@@ -238,37 +238,31 @@
       background-color: #DEEBFF;
       border: 7px solid #DEEBFF;
       border-radius: 50px;
-      padding: 2px;
     }
     .fa-child::before{
       color: #0065FC;
       text-align: center;
       background-color: #DEEBFF;
-      border: 7px solid #DEEBFF;
+      border-top: 5px solid #DEEBFF;
       border-radius: 50px;
       padding: 2px;
+      border-bottom: 5px solid #DEEBFF;
+      border-left: 9px solid #DEEBFF;
+      border-right: 9px solid #DEEBFF;
     }
     .fa-gratipay::before{
       color: #0065FC;
       text-align: center;
       background-color: #DEEBFF;
-      border: 7px solid #DEEBFF;
+      border: 8px solid #DEEBFF;
       border-radius: 50px;
-      padding: 2px;
     }
     .fa-dog::before{
       color: #0065FC;
       text-align: center;
       background-color: #DEEBFF;
-      border: 7px solid #DEEBFF;
+      border: 8px solid #DEEBFF;
       border-radius: 50px;
-      padding: 2px;
-    }
-    #information{
-      display: flex;
-      flex-direction: row;
-      margin-block: 15px;
-      margin-top: 15px;
     }
     
     /* BODY */
@@ -276,23 +270,36 @@
       display:flex;
       flex-wrap: wrap;
       flex-direction: row;
+      width: 100%;
+    }
+    .hebergementsamarseille {
+      width: 58%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: left;
+      background-color: #F2F2F2;
+      border-radius: 24px;
+      border:10px;
+      border-style: solid;
+      border-color: #F2F2F2;
     }
     .hebergementsamarseille h1{
       font-size: 22px;
       font-weight: bolder;
-      width: 890px;
-      margin-bottom: -20px;
       margin-top: 25px;
-      height: 30px;
       padding-top: 0px;
       margin-left: 15px;
+      flex-basis: 100%;
     }
     .leslogementspopulaires h1{
       margin-left: 4px;
       font-size: 22px;
       font-weight: bolder;
       width: 360px;
-      margin-top: 1.67em;
+      margin-top: 35px;
+      margin-bottom: 45px;
+      display:inline-block;
     }
     .hebergementsamarseille h2 {
       margin: 4PX 8px 4px 8px;
@@ -300,17 +307,19 @@
     }
     .hebergementsamarseille article {
       background-color: white;
-      padding: 5px;
+      padding: 2px;
       border-radius: 15px;
       box-shadow: 0 0 16px #0000002e;
       transition-duration: 0.1s;
       cursor: pointer;
       box-sizing: border-box;
-      height: 190px;
-      margin-left: 15px;
+      height: 170px;
+      margin-left: 17px;
       margin-right: 20px;
-      border-color: #F2F2F2;
       border: 15px;
+      width: 210px;
+      align-content: center;
+      display: flex;
     }
     .hebergementsamarseille>a{
       flex-basis: 100%;
@@ -323,11 +332,14 @@
     .hebergementsamarseille img {
       object-fit: cover;
       border-radius: 15px 15px 0 0;
-      height: 100px;
-      width: 218px;
+      height: 90px;
+      width: 206px;
+      padding-left: 1px;
+      padding-top: 1px;
+      padding-right: 1px;
     }
     .hebergementsamarseille p{
-      margin: 0PX 12px 8px 10px;
+      margin: 0PX 0px 0px 7px;
       font-weight: normal
     }
     .leslogementspopulaires p{
@@ -339,6 +351,15 @@
     }
     .hebergementsamarseille li{
       margin: 0px;
+    }
+    .leslogementspopulaires {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #F2F2F2;
+      border-radius: 24px;
+      margin-inline: auto;
+      width: 35%;
     }
     .leslogementspopulaires ul {
       margin: 17px 15px 3px 0px;
@@ -363,7 +384,7 @@
       height: 145px;
       width: 355px;
       margin-bottom: 30px;
-      margin-top: 5px;
+      margin-top: 0px;
     }
     .fa-chart-line{
       float: right;
@@ -372,67 +393,48 @@
       font-size: 15px;
       border-left: 35px;
       font-weight: bold;
-      float: right;
+      display:inline-block;
+      vertical-align: top;
       text-align: left;
       margin-top: 16px;
       width: 165px;
       margin-bottom: 35px;
-    }
-    .leslogementspopulaires img{
-      border-bottom-left-radius: 10px;
-      width: 145px;
-      height: 135px;
-      border-top-left-radius: 10px;
-    }
-    .leslogementspopulaires a {
-      overflow: auto;
-      width: 190px;
-      height: 140px;
-      float: right;
-      display: flex;
-      flex-direction: column;
-    }
-    .leslogementspopulaires figure {
-      float: left;
-      margin: 0;
-      position: relative;
-      min-height: 100%;
-      width: 33%;
-      min-width: 33%;
-      max-width: 33%;
+      height: 35.25px;
+      width: 159px;
     }
   }
-  .leslogementspopulaires {
+  .leslogementspopulaires img{
+    border-bottom-left-radius: 10px;
+    width: 145px;
+    height: 135px;
+    border-top-left-radius: 10px;
+  }
+  .leslogementspopulaires a {
+    overflow: auto;
+    width: 190px;
+    height: 140px;
+    display: inline-block;
+    vertical-align: baseline;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #F2F2F2;
-    border-radius: 24px;
-    margin-inline: auto;
-    width: 400px;
-    height: 610px;
+    margin-left: 160px;
+    margin-bottom: 0px;
+    margin-top: -140px;
   }
-  .hebergementsamarseille {
-    width: 800px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #F2F2F2;
-    border-radius: 24px;
-    float: left;
-    height: 590px;
-    border:10px;
-    border-style: solid;
-    border-color: #F2F2F2;
-    margin-inline: auto;
-    margin: 0px;
+  .leslogementspopulaires figure {
+    display:inline-block ;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
   }
   .lesactiviteamarseille{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 600px;
+    height: 541px;
     justify-content: flex-end;
   }
   .lesactiviteamarseille h1{
@@ -449,7 +451,7 @@
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
-    width: 252px;
+    width: 272px;
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -460,7 +462,7 @@
     margin: 1px;
   }
   .lesactiviteamarseille img{
-    width: 250px;
+    width: 270px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
@@ -479,7 +481,7 @@
     border-top-right-radius: 15px;
   }
   #fort, #lgt {
-    height: 200px;
+    height: 190px;
   }
   #fort img, #lgt img {
     height: 150px;
@@ -496,15 +498,16 @@
   }
   /* FOOTER */
   footer{
-    background-color: #F2F2F2;
-    padding: 0 32px;
-    box-sizing: border-box;
-    display: flex ;
+    clear: both;
+    content: "";
+    line-height: 0;
+    display: flex;
     flex-direction: row;
-    height: 1290px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    padding: 25px;
   }
   footer div{
-    height: 190.45px;
     width: 390px;
   }
   .a.apropos{
