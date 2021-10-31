@@ -402,10 +402,17 @@
         max-width: 33%;
     }
 }
-header{
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 14px;
-}
+    flex-wrap: nowrap;
+    margin: 0px;
+    height: auto;
+    overflow-x:hidden 
+  }
+  header{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
 }
