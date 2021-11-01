@@ -202,7 +202,7 @@
       border: auto;
       margin: 10px;
     }
-    .romantique{
+    .gratipay {
       display: flex;
       justify-content: flex-start;
       align-items: left;
@@ -403,6 +403,7 @@
       margin-top: 0px;
     }
     .fa-chart-line{
+      display: flex;
       float: right;
     }
     .leslogementspopulaires h2 {

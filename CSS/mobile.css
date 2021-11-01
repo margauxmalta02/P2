@@ -5,90 +5,97 @@
 @media (max-width: 600px) {
     *{
         font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+        font-stretch: semi-expanded;
     }
     body {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         margin: 0px;
-        height: 1376px;
+        height: auto;
+        overflow-x:hidden 
     }
-    
-    a {
-        color: inherit;
-        text-decoration: none;
-        width: 1071px;
-        margin-bottom: 15px;
-    }
-    ul {
-        list-style: none;
-        display: inline-flex;
-        padding: 0;
-        margin: 0;
-    }
-    /* HEADER */
-    .header {
+    .header{
         display: flex;
-        flex-direction: row;
-        max-width: 1440px;
-        font-size: 14px;
+        flex-direction:column ;
+        flex-wrap: wrap;
     }
-    .header img {
+    .header img, .header a{
+        display: flex;
+        justify-content: center;
+    }
+    .header img{
         height: 30px;
         width: 60px;
-        margin-left: 50px;
-        margin-right: 600px;
         margin-top: 15px;
     }
     .header nav {
-        margin-right: 45px;
+        display: flex;
+        flex-basis: 100%;
     }
     .header ul {
         margin: 19px 0;
         width: 100%;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
     }
     .header li {
-        padding: 0 1.2rem;
+        width: 50%;
     }
-    .header nav a {
-        padding: 16px 0;
+    .header a {
         font-weight: 500;
         text-align: center;
         transition-duration: 0.1s;
         border-bottom: 3px transparent solid;
+        padding-bottom: 15px;
     }
     .header nav a:hover {
-        border-top: 3px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
         color: #0065FC;
     }
     .header nav a[data-active="true"] {
         border-top: 3px solid #0065FC;
         color: #0065FC;
-        
-        /* MAIN */
     }
-    .main {
-        max-width: 1440px;
+    .titre {
+        margin-top: -20px;
+    }
+    nav {
+        margin-left: 20px;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    main{
         margin: 0px;
-        padding: 0 32px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 100%;
+        margin: 15px;
     }
-    
-    /* SEARCH */
-    .search h1{
+    .search{
+        width: 100%;
+    }
+    .search h1 {
         font-size: 22px;
-        font-weight: bolder;
-        margin: auto;
+        padding: 0px;
+        font-stretch: semi-expanded;
+        text-align: justify;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 101px;
+        margin-top: 0px;
     }
     .search p{
-        font-size: 13px;
-        margin-top: 5px;
-        font-weight: normal;
-        margin-bottom: 0px;
+        padding: 0px;
+        font-stretch: semi-expanded;
+        text-align: start;
+        margin: 10px;
+        margin-left: 20px;
     }
     .map{
         font-size: 15px;
@@ -103,14 +110,14 @@
         padding: 0px;
         margin-top: 15px;
         margin-bottom: 15px;
-        height: 50px;
+        height: 40px;
         border-top: #f2f2f2;
         border-bottom: #F2F2F2;
     }
     .iconemap{
         background-color: #F2F2F2;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
         align-items: center;
         padding-left: 15px;
         padding-right: 10px;
@@ -119,7 +126,7 @@
     }
     
     .search nav{
-        display: inline-flex;
+        display: flex;
         max-width: 100%;
         overflow: auto;
         margin-block-end: 15px;
@@ -130,15 +137,15 @@
         border-style:initial;
         font-size: 15px;
         font-weight: bold;
-        padding: 0 1.5rem;
-        width: 14rem;
+        padding: 0 16px;
+        width: 224px;
         border-top: #F2F2F2 1px solid;
         border-bottom: #F2F2F2 1px solid;
         border-right: none;
     }
     .search button.rechercher{
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
         color: white;
         background-color:#0065FC ;
         border-style: none;
@@ -148,30 +155,17 @@
         font-size: 15px;
         font-weight: bold;
     }
-    .fa, .fab, .fad, .fal, .far, .fas {
-        display: inline-block;
-        margin-right: 5px;
-        line-height: 1;
-        text-align: center;
-        margin-top: 7px;
-    }
-    .menufiltres{
+    .menufiltres {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        font-size: 17px;
-        font-weight: bold;
-        margin-inline: auto;
-        overflow:hidden;
+        flex-wrap: wrap;
+        height: auto;
     }
-    .search h2{
+    .search h2 {
         font-size: 15px;
         font-weight: bold;
-        margin: 5px;
-    }
-    .filtres{
-        border: 0px;
-        margin: auto;
+        margin-left: 20px;
+        flex-basis: 100%;
     }
     .button.money{
         padding-right: 10px;
@@ -202,7 +196,7 @@
         border: auto;
         margin: 10px;
     }
-    .romantique{
+    .gratipay{
         display: flex;
         justify-content: flex-start;
         align-items: left;
@@ -221,198 +215,77 @@
     .menufiltres button{
         display: inline-block;
         border-radius: 50px;
-        border-left:15px;
         background-color: white;
-        border-color: #F2F2F2;
-        height: 30px;
-        border: 1px solid #F2F2F2;
-        margin-top: 0px;
-        padding-top: 0px;
-        padding-bottom: 4px;
-        padding-left: 0px;
-        margin-left: 30px;
+        border: 2px solid #F2F2F2;
+        margin-left: 40px;
+        padding-right: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        height: 37px;
     }
     .fa-money-bill-wave-alt::before{
         color: #0065FC;
         text-align: center;
         background-color: #DEEBFF;
-        border: 7px solid #DEEBFF;
+        border-bottom: 12px solid #DEEBFF;
+        border-left: 10px solid #DEEBFF;
+        border-right: 10px solid #DEEBFF;
         border-radius: 50px;
-        padding: 2px;
+        margin-left: -5px;
+        border-top: 10px solid #DEEBFF;
     }
     .fa-child::before{
         color: #0065FC;
         text-align: center;
         background-color: #DEEBFF;
-        border: 7px solid #DEEBFF;
+        border-bottom: 12px solid #DEEBFF;
+        border-left: 14px solid #DEEBFF;
+        border-right: 14px solid #DEEBFF;
         border-radius: 50px;
-        padding: 2px;
+        margin-left: -5px;
+        border-top: 10px solid #DEEBFF;
     }
+    
     .fa-gratipay::before{
         color: #0065FC;
         text-align: center;
         background-color: #DEEBFF;
-        border: 7px solid #DEEBFF;
+        border-bottom: 12px solid #DEEBFF;
+        border-left: 11px solid #DEEBFF;
+        border-right: 11px solid #DEEBFF;
         border-radius: 50px;
-        padding: 2px;
+        margin-left: -5px;
+        border-top: 10px solid #DEEBFF
     }
     .fa-dog::before{
         color: #0065FC;
         text-align: center;
         background-color: #DEEBFF;
-        border: 7px solid #DEEBFF;
+        border-bottom: 12px solid #DEEBFF;
+        border-left: 10px solid #DEEBFF;
+        border-right: 10px solid #DEEBFF;
         border-radius: 50px;
-        padding: 2px;
+        margin-left: -5px;
+        border-top: 10px solid #DEEBFF;
     }
-    #information{
-        display: flex;
-        flex-direction: row;
-        margin-block: 15px;
-        margin-top: 15px;
+    .menufiltres ul{
+        list-style-type: none;
+        padding:0px
     }
-    
-    /* BODY */
-    .article{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+    .menufiltres li{
+        margin-left: -25px;
+        margin-bottom: 10px;
     }
-    .hebergementsamarseille h1{
-        font-size: 22px;
-        font-weight: bolder;
-        width: 890px;
-        margin-bottom: -20px;
-        margin-top: 25px;
-        height: 30px;
-        padding-top: 0px;
-        margin-left: 15px;
+    #information {
+        font-size: 13px;
+        margin-left: 20px;
     }
-    .leslogementspopulaires h1{
-        margin-left: 4px;
-        font-size: 22px;
-        font-weight: bolder;
-        width: 360px;
-        margin-top: 1.67em;
-    }
-    .hebergementsamarseille h2 {
-        margin: 4PX 8px 4px 8px;
-        font-size: 15px;
-    }
-    .hebergementsamarseille article {
-        background-color: white;
-        padding: 5px;
-        border-radius: 15px;
-        box-shadow: 0 0 16px #0000002e;
-        transition-duration: 0.1s;
-        cursor: pointer;
-        box-sizing: border-box;
-        height: 190px;
-        margin-left: 15px;
-        margin-right: 20px;
-        border-color: #F2F2F2;
-        border: 15px;
-    }
-    .hebergementsamarseille>a{
-        flex-basis: 100%;
-        margin-left: 30px;
-        font-weight: bold;
-    }
-    .hebergementsamarseille figure {
-        margin: 0;
-    }
-    .hebergementsamarseille img {
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-        height: 100px;
-        width: 218px;
-    }
-    .hebergementsamarseille p{
-        margin: 0PX 12px 8px 10px;
-        font-weight: normal
-    }
-    .leslogementspopulaires p{
-        margin: -30PX 0px 20px 2px;
-        font-weight: normal
-    }
-    .hebergementsamarseille ul{
-        margin: 0px 12px 3px 7px;
-    }
-    .hebergementsamarseille li{
-        margin: 0px;
-    }
-    .leslogementspopulaires ul {
-        margin: 17px 15px 3px 0px;
-    }
-    .leslogementspopulaires li {
-        margin: 0px;
-    }
-    .fas[data-active="true"] {
-        color: #0065FC;
-    }
-    .fas[data-active="false"] {
-        color: #d9d9d9;
-    }
-    .leslogementspopulaires article {
-        background-color: white;
-        padding: 5px;
-        border-radius: 15px;
-        box-shadow: 0 0 16px #0000002e;
-        transition-duration: 0.1s;
-        cursor: pointer;
-        box-sizing: border-box;
-        height: 145px;
-        width: 355px;
-        margin-bottom: 30px;
-        margin-top: 5px;
-    }
-    .fa-chart-line{
-        float: right;
-    }
-    .leslogementspopulaires h2 {
-        font-size: 15px;
-        border-left: 35px;
-        font-weight: bold;
-        float: right;
-        text-align: left;
-        margin-top: 16px;
-        width: 165px;
-        margin-bottom: 35px;
-    }
-    .leslogementspopulaires img{
-        border-bottom-left-radius: 10px;
-        width: 145px;
-        height: 135px;
-        border-top-left-radius: 10px;
-    }
-    .leslogementspopulaires a {
-        overflow: auto;
-        width: 190px;
-        height: 140px;
-        float: right;
+    .leslogementspopulaires {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        background-color: #F2F2F2;
+        border-radius: 24px;
     }
-    .leslogementspopulaires figure {
-        float: left;
-        margin: 0;
-        position: relative;
-        min-height: 100%;
-        width: 33%;
-        min-width: 33%;
-        max-width: 33%;
-    }
-}
-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 0px;
-    height: auto;
-    overflow-x:hidden 
-  }
-  header{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-  }
+    
 }
