@@ -2,421 +2,420 @@
     font-family: 'raleway';
     src: url(../Font/Raleway-Regular.ttf) format('truetype')
   }
-  @media (min-width: 992px){
-    *{
-      font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      margin: 0px;
-      height: auto;
-      overflow-x:hidden 
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-      width: 1071px;
-      margin-bottom: 15px;
-    }
-    ul {
-      list-style: none;
-      display: inline-flex;
-      padding: 0;
-      margin: 0;
-    }
-    /* HEADER */
-    .header {
-      display: flex;
-      flex-direction: row;
-      flex-basis: 100%;
-      max-width: 1440px;
-      font-size: 14px;
-    }
-    .header img {
-      height: 30px;
-      width: 60px;
-      margin-left: 50px;
-      margin-right: 600px;
-      margin-top: 15px;
-    }
-    .header nav {
-      margin-right: 45px;
-    }
-    .header ul {
-      margin: 19px 0;
-      width: 100%;
-      text-align: center;
-    }
-    .header li {
-      padding: 0 19px;
-    }
-    .header nav a {
-      padding: 16px 0;
-      font-weight: 500;
-      text-align: center;
-      transition-duration: 0.1s;
-      border-bottom: 3px transparent solid;
-    }
-    .header nav a:hover {
-      border-top: 3px solid #0065FC;
-      color: #0065FC;
-    }
-    .header nav a[data-active="true"] {
-      border-top: 3px solid #0065FC;
-      color: #0065FC;
-      
-      /* MAIN */
-    }
-    .main {
-      max-width: 1440px;
-      margin: 0px;
-      padding: 0 32px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
+  
+  *{
+    font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px;
+    height: auto;
+    overflow-x:hidden 
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    width: 1071px;
+    margin-bottom: 15px;
+  }
+  ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+  }
+  /* HEADER */
+  .header {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    max-width: 1440px;
+    font-size: 14px;
+  }
+  .header img {
+    height: 30px;
+    width: 60px;
+    margin-left: 50px;
+    margin-right: 600px;
+    margin-top: 15px;
+  }
+  .header nav {
+    margin-right: 45px;
+  }
+  .header ul {
+    margin: 19px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .header li {
+    padding: 0 19px;
+  }
+  .header nav a {
+    padding: 16px 0;
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.1s;
+    border-bottom: 3px transparent solid;
+  }
+  .header nav a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+  }
+  .header nav a[data-active="true"] {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
     
-    /* SEARCH */
-    .search h1{
-      font-size: 22px;
-      font-weight: bolder;
-      margin: auto;
-    }
-    .search p{
-      font-size: 13px;
-      margin-top: 5px;
-      font-weight: normal;
-      margin-bottom: 0px;
-    }
-    .map{
-      font-size: 15px;
-      display: flex;
-      justify-content: left;
-      margin: 0px;
-      border-radius: 10px;
-      border-color: white;
-      border-style: none;
-      border-left: none;
-      border-right: none;
-      padding: 0px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      height: 40px;
-      border-top: #f2f2f2;
-      border-bottom: #F2F2F2;
-    }
-    .iconemap{
-      background-color: #F2F2F2;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
-      align-items: center;
-      padding-left: 15px;
-      padding-right: 10px;
-      padding-top: 11px;
-      padding-bottom: 5px;
-    }
-    
-    .search nav{
-      display: inline-flex;
-      max-width: 100%;
-      overflow: auto;
-      margin-block-end: 15px;
-    }
-    .search input{
-      border-color: #F2F2F2;
-      border-width: 1px;
-      border-style:initial;
-      font-size: 15px;
-      font-weight: bold;
-      padding: 0 16px;
-      width: 224px;
-      border-top: #F2F2F2 1px solid;
-      border-bottom: #F2F2F2 1px solid;
-      border-right: none;
-    }
-    .search button.rechercher{
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-      color: white;
-      background-color:#0065FC ;
-      border-style: none;
-      align-items: center;
-      padding-right: 10px;
-      padding-left: 10px;
-      font-size: 15px;
-      font-weight: bold;
-    }
-    .fa, .fab, .fad, .fal, .far, .fas {
-      display: inline-block;
-      margin-right: 5px;
-      line-height: 1;
-      text-align: center;
-    }
-    .menufiltres{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      font-size: 17px;
-      font-weight: bold;
-      margin-right: 10px;
-    }
-    .search h2{
-      font-size: 15px;
-      font-weight: bold;
-      margin-bottom: 11px;
-      margin-top: 11px;
-    }
-    .filtres{
-      border: 0px;
-      margin: auto;
-    }
-    .button.money{
-      padding-right: 10px;
-      text-align: center;
-    }
-    .button.dog{
-      text-align: center;
-    }
-    .button.child{
-      text-align: center;
-    }
-    .button.gratipay{
-      text-align: center;
-    }
-    .money{
-      display: flex;
-      justify-content: flex-start;
-      align-items: left;
-      border-radius: 10px;
-      border: auto;
-      margin: 10px;
-    }
-    .child{
-      display: flex;
-      justify-content: flex-start;
-      align-items: left;
-      border-radius: 10px;
-      border: auto;
-      margin: 10px;
-    }
-    .gratipay {
-      display: flex;
-      justify-content: flex-start;
-      align-items: left;
-      border-radius: 10px;
-      border: auto;
-      margin: 10px;
-    }
-    .dog{
-      display: flex;
-      justify-content: flex-start;
-      align-items: left;
-      border-radius: 10px;
-      border: auto;
-      margin: 10px;;
-    }
-    .menufiltres button{
-      display: inline-block;
-      border-radius: 50px;
-      border-left:15px;
-      background-color: white;
-      border-color: #F2F2F2;
-      height: 39px;
-      border: 2px solid #F2F2F2;
-      margin-top: 0px;
-      margin-left: 40px;
-      padding-right: 15px;
-      font-size: 15px;
-      font-weight: bold;
-    }
-    .fa-money-bill-wave-alt::before{
-      color: #0065FC;
-      text-align: center;
-      background-color: #DEEBFF;
-      border-bottom: 12px solid #DEEBFF;
-      border-left: 10px solid #DEEBFF;
-      border-right: 10px solid #DEEBFF;
-      border-radius: 50px;
-      margin-left: -5px;
-      border-top: 10px solid #DEEBFF;
-    }
-    .fa-child::before{
-      color: #0065FC;
-      text-align: center;
-      background-color: #DEEBFF;
-      border-bottom: 12px solid #DEEBFF;
-      border-left: 14px solid #DEEBFF;
-      border-right: 14px solid #DEEBFF;
-      border-radius: 50px;
-      margin-left: -5px;
-      border-top: 10px solid #DEEBFF;
-    }
-    
-    .fa-gratipay::before{
-      color: #0065FC;
-      text-align: center;
-      background-color: #DEEBFF;
-      border-bottom: 12px solid #DEEBFF;
-      border-left: 11px solid #DEEBFF;
-      border-right: 11px solid #DEEBFF;
-      border-radius: 50px;
-      margin-left: -5px;
-      border-top: 10px solid #DEEBFF
-    }
-    .fa-dog::before{
-      color: #0065FC;
-      text-align: center;
-      background-color: #DEEBFF;
-      border-bottom: 12px solid #DEEBFF;
-      border-left: 10px solid #DEEBFF;
-      border-right: 10px solid #DEEBFF;
-      border-radius: 50px;
-      margin-left: -5px;
-      border-top: 10px solid #DEEBFF;
-    }
-    #information {
-      font-size: 13px;
-      margin-bottom: 0px;
-    }
-    /* BODY */
-    .article{
-      display:flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      width: 100%;
-    }
-    .hebergementsamarseille {
-      width: 760px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: left;
-      background-color: #F2F2F2;
-      border-radius: 24px;
-      border-style: solid;
-      border-color: #F2F2F2;
-    }
-    .hebergementsamarseille h1{
-      font-size: 22px;
-      font-weight: bolder;
-      margin-top: 25px;
-      padding-top: 0px;
-      margin-left: 15px;
-      flex-basis: 100%;
-    }
-    .leslogementspopulaires h1{
-      margin-left: 4px;
-      font-size: 22px;
-      font-weight: bolder;
-      width: 360px;
-      margin-top: 35px;
-      margin-bottom: 45px;
-      display:inline-block;
-    }
-    .hebergementsamarseille h2 {
-      margin: 4PX 8px 4px 8px;
-      font-size: 15px;
-    }
-    .hebergementsamarseille article {
-      background-color: white;
-      padding: 2px;
-      border-radius: 15px;
-      box-shadow: 0 0 16px #0000002e;
-      transition-duration: 0.1s;
-      cursor: pointer;
-      box-sizing: border-box;
-      height: 170px;
-      margin-left: 17px;
-      margin-right: 20px;
-      border: 15px;
-      width: 210px;
-      align-content: center;
-      display: flex;
-    }
-    .hebergementsamarseille>a{
-      flex-basis: 100%;
-      margin-left: 30px;
-      font-weight: bold;
-      margin-top: 15px;
-      margin-bottom: 0px;
-    }
-    .hebergementsamarseille figure {
-      margin: 0;
-    }
-    .hebergementsamarseille img {
-      object-fit: cover;
-      border-radius: 15px 15px 0 0;
-      height: 90px;
-      width: 206px;
-    }
-    .hebergementsamarseille p{
-      margin: 0PX 0px 0px 7px;
-      font-weight: normal
-    }
-    .leslogementspopulaires p{
-      margin: -30PX 0px 20px 2px;
-      font-weight: normal
-    }
-    .hebergementsamarseille ul{
-      margin: 0px 12px 3px 7px;
-    }
-    .hebergementsamarseille li{
-      margin: 0px;
-    }
-    .leslogementspopulaires {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #F2F2F2;
-      border-radius: 24px;
-      width: 450px;
-      margin-left: 30px;
-    }
-    .leslogementspopulaires ul {
-      margin: 17px 15px 3px 0px;
-    }
-    .leslogementspopulaires li {
-      margin: 0px;
-    }
-    .fas[data-active="true"] {
-      color: #0065FC;
-    }
-    .fas[data-active="false"] {
-      color: #d9d9d9;
-    }
-    .leslogementspopulaires article {
-      background-color: white;
-      padding: 2px;
-      border-radius: 15px;
-      box-shadow: 0 0 16px #0000002e;
-      transition-duration: 0.1s;
-      cursor: pointer;
-      box-sizing: border-box;
-      height: 127px;
-      width: 355px;
-      margin-bottom: 30px;
-      margin-top: -8px;
-    }
-    .fa-chart-line{
-      display: flex;
-      float: right;
-    }
-    .leslogementspopulaires h2 {
-      font-size: 15px;
-      border-left: 35px;
-      font-weight: bold;
-      display:inline-block;
-      vertical-align: top;
-      text-align: left;
-      margin-top: 16px;
-      width: 165px;
-      margin-bottom: 35px;
-      height: 35.25px;
-      width: 159px;
-    }
+    /* MAIN */
+  }
+  .main {
+    max-width: 1440px;
+    margin: 0px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* SEARCH */
+  .search h1{
+    font-size: 22px;
+    font-weight: bolder;
+    margin: auto;
+  }
+  .search p{
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: normal;
+    margin-bottom: 0px;
+  }
+  .map{
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+    margin: 0px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: none;
+    border-left: none;
+    border-right: none;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+    border-top: #f2f2f2;
+    border-bottom: #F2F2F2;
+  }
+  .iconemap{
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 11px;
+    padding-bottom: 5px;
+  }
+  
+  .search nav{
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+    margin-block-end: 15px;
+  }
+  .search input{
+    border-color: #F2F2F2;
+    border-width: 1px;
+    border-style:initial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 16px;
+    width: 224px;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    border-right: none;
+  }
+  .search button.rechercher{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background-color:#0065FC ;
+    border-style: none;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .fa, .fab, .fad, .fal, .far, .fas {
+    display: inline-block;
+    margin-right: 5px;
+    line-height: 1;
+    text-align: center;
+  }
+  .menufiltres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .search h2{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 11px;
+    margin-top: 11px;
+  }
+  .filtres{
+    border: 0px;
+    margin: auto;
+  }
+  .button.money{
+    padding-right: 10px;
+    text-align: center;
+  }
+  .button.dog{
+    text-align: center;
+  }
+  .button.child{
+    text-align: center;
+  }
+  .button.gratipay{
+    text-align: center;
+  }
+  .money{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    border-radius: 10px;
+    border: auto;
+    margin: 10px;
+  }
+  .child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    border-radius: 10px;
+    border: auto;
+    margin: 10px;
+  }
+  .gratipay {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    border-radius: 10px;
+    border: auto;
+    margin: 10px;
+  }
+  .dog{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    border-radius: 10px;
+    border: auto;
+    margin: 10px;;
+  }
+  .menufiltres button{
+    display: inline-block;
+    border-radius: 50px;
+    border-left:15px;
+    background-color: white;
+    border-color: #F2F2F2;
+    height: 39px;
+    border: 2px solid #F2F2F2;
+    margin-top: 0px;
+    margin-left: 40px;
+    padding-right: 15px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .fa-money-bill-wave-alt::before{
+    color: #0065FC;
+    text-align: center;
+    background-color: #DEEBFF;
+    border-bottom: 12px solid #DEEBFF;
+    border-left: 10px solid #DEEBFF;
+    border-right: 10px solid #DEEBFF;
+    border-radius: 50px;
+    margin-left: -5px;
+    border-top: 10px solid #DEEBFF;
+  }
+  .fa-child::before{
+    color: #0065FC;
+    text-align: center;
+    background-color: #DEEBFF;
+    border-bottom: 12px solid #DEEBFF;
+    border-left: 14px solid #DEEBFF;
+    border-right: 14px solid #DEEBFF;
+    border-radius: 50px;
+    margin-left: -5px;
+    border-top: 10px solid #DEEBFF;
+  }
+  
+  .fa-gratipay::before{
+    color: #0065FC;
+    text-align: center;
+    background-color: #DEEBFF;
+    border-bottom: 12px solid #DEEBFF;
+    border-left: 11px solid #DEEBFF;
+    border-right: 11px solid #DEEBFF;
+    border-radius: 50px;
+    margin-left: -5px;
+    border-top: 10px solid #DEEBFF
+  }
+  .fa-dog::before{
+    color: #0065FC;
+    text-align: center;
+    background-color: #DEEBFF;
+    border-bottom: 12px solid #DEEBFF;
+    border-left: 10px solid #DEEBFF;
+    border-right: 10px solid #DEEBFF;
+    border-radius: 50px;
+    margin-left: -5px;
+    border-top: 10px solid #DEEBFF;
+  }
+  #information {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+  /* BODY */
+  .article{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+  }
+  .hebergementsamarseille {
+    width: 760px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    border-style: solid;
+    border-color: #F2F2F2;
+  }
+  .hebergementsamarseille h1{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: 25px;
+    padding-top: 0px;
+    margin-left: 15px;
+    flex-basis: 100%;
+  }
+  .leslogementspopulaires h1{
+    margin-left: 4px;
+    font-size: 22px;
+    font-weight: bolder;
+    width: 360px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    display:inline-block;
+  }
+  .hebergementsamarseille h2 {
+    margin: 4PX 8px 4px 8px;
+    font-size: 15px;
+  }
+  .hebergementsamarseille article {
+    background-color: white;
+    padding: 2px;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 170px;
+    margin-left: 17px;
+    margin-right: 20px;
+    border: 15px;
+    width: 210px;
+    align-content: center;
+    display: flex;
+  }
+  .hebergementsamarseille>a{
+    flex-basis: 100%;
+    margin-left: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .hebergementsamarseille figure {
+    margin: 0;
+  }
+  .hebergementsamarseille img {
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    height: 90px;
+    width: 206px;
+  }
+  .hebergementsamarseille p{
+    margin: 0PX 0px 0px 7px;
+    font-weight: normal
+  }
+  .leslogementspopulaires p{
+    margin: -30PX 0px 20px 2px;
+    font-weight: normal
+  }
+  .hebergementsamarseille ul{
+    margin: 0px 12px 3px 7px;
+  }
+  .hebergementsamarseille li{
+    margin: 0px;
+  }
+  .leslogementspopulaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    width: 450px;
+    margin-left: 30px;
+  }
+  .leslogementspopulaires ul {
+    margin: 17px 15px 3px 0px;
+  }
+  .leslogementspopulaires li {
+    margin: 0px;
+  }
+  .fas[data-active="true"] {
+    color: #0065FC;
+  }
+  .fas[data-active="false"] {
+    color: #d9d9d9;
+  }
+  .leslogementspopulaires article {
+    background-color: white;
+    padding: 2px;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 127px;
+    width: 355px;
+    margin-bottom: 30px;
+    margin-top: -8px;
+  }
+  .fa-chart-line{
+    display: flex;
+    float: right;
+  }
+  .leslogementspopulaires h2 {
+    font-size: 15px;
+    border-left: 35px;
+    font-weight: bold;
+    display:inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-top: 16px;
+    width: 165px;
+    margin-bottom: 35px;
+    height: 35.25px;
+    width: 159px;
   }
   .leslogementspopulaires img{
     border-bottom-left-radius: 10px;
@@ -555,4 +554,3 @@
   footer li{
     margin: 10px;
   }
-}

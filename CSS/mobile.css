@@ -4,16 +4,9 @@
 }
 @media (max-width: 600px) {
     *{
-        font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
         font-stretch: semi-expanded;
     }
     body {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 0px;
-        height: auto;
-        overflow-x:hidden;
         width: 400px;
     }
     .header{
