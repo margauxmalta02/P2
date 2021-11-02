@@ -279,7 +279,7 @@
     }
     #information {
       font-size: 13px;
-      margin-bottom: 15px;
+      margin-bottom: 0px;
     }
     /* BODY */
     .article{
@@ -289,14 +289,13 @@
       width: 100%;
     }
     .hebergementsamarseille {
-      width: 58%;
+      width: 760px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: left;
       background-color: #F2F2F2;
       border-radius: 24px;
-      border:10px;
       border-style: solid;
       border-color: #F2F2F2;
     }
@@ -341,6 +340,7 @@
       flex-basis: 100%;
       margin-left: 30px;
       font-weight: bold;
+      margin-top: 15px;
     }
     .hebergementsamarseille figure {
       margin: 0;
@@ -350,9 +350,6 @@
       border-radius: 15px 15px 0 0;
       height: 90px;
       width: 206px;
-      padding-left: 1px;
-      padding-top: 1px;
-      padding-right: 1px;
     }
     .hebergementsamarseille p{
       margin: 0PX 0px 0px 7px;
@@ -374,8 +371,8 @@
       align-items: center;
       background-color: #F2F2F2;
       border-radius: 24px;
-      margin-inline: auto;
-      width: 35%;
+      width: 450px;
+      margin-left: 30px;
     }
     .leslogementspopulaires ul {
       margin: 17px 15px 3px 0px;
@@ -391,16 +388,16 @@
     }
     .leslogementspopulaires article {
       background-color: white;
-      padding: 5px;
+      padding: 2px;
       border-radius: 15px;
       box-shadow: 0 0 16px #0000002e;
       transition-duration: 0.1s;
       cursor: pointer;
       box-sizing: border-box;
-      height: 145px;
+      height: 127px;
       width: 355px;
       margin-bottom: 30px;
-      margin-top: 0px;
+      margin-top: -8px;
     }
     .fa-chart-line{
       display: flex;
@@ -423,15 +420,13 @@
   .leslogementspopulaires img{
     border-bottom-left-radius: 10px;
     width: 145px;
-    height: 135px;
+    height: 123px;
     border-top-left-radius: 10px;
   }
   .leslogementspopulaires a {
     overflow: auto;
     width: 190px;
     height: 140px;
-    display: inline-block;
-    vertical-align: baseline;
     display: flex;
     flex-direction: column;
     margin-left: 160px;

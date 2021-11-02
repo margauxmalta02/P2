@@ -13,7 +13,8 @@
         flex-wrap: nowrap;
         margin: 0px;
         height: auto;
-        overflow-x:hidden 
+        overflow-x:hidden;
+        width: 400px;
     }
     .header{
         display: flex;
@@ -160,12 +161,14 @@
         flex-direction: row;
         flex-wrap: wrap;
         height: auto;
+        margin-left: 10px;
     }
     .search h2 {
         font-size: 15px;
         font-weight: bold;
         margin-left: 20px;
         flex-basis: 100%;
+        margin-bottom: 0px;
     }
     .button.money{
         padding-right: 10px;
@@ -186,7 +189,7 @@
         align-items: left;
         border-radius: 10px;
         border: auto;
-        margin: 10px;
+        margin-left: 10px;
     }
     .child{
         display: flex;
@@ -194,7 +197,7 @@
         align-items: left;
         border-radius: 10px;
         border: auto;
-        margin: 10px;
+        margin-left: 10px;
     }
     .gratipay{
         display: flex;
@@ -202,7 +205,7 @@
         align-items: left;
         border-radius: 10px;
         border: auto;
-        margin: 10px;
+        margin-left: 10px;
     }
     .dog{
         display: flex;
@@ -210,7 +213,7 @@
         align-items: left;
         border-radius: 10px;
         border: auto;
-        margin: 10px;;
+        margin-left: 10px;
     }
     .menufiltres button{
         display: inline-block;
@@ -233,6 +236,7 @@
         border-radius: 50px;
         margin-left: -5px;
         border-top: 10px solid #DEEBFF;
+        margin-right: 10px;
     }
     .fa-child::before{
         color: #0065FC;
@@ -244,6 +248,7 @@
         border-radius: 50px;
         margin-left: -5px;
         border-top: 10px solid #DEEBFF;
+        margin-right: 10px;
     }
     
     .fa-gratipay::before{
@@ -255,7 +260,8 @@
         border-right: 11px solid #DEEBFF;
         border-radius: 50px;
         margin-left: -5px;
-        border-top: 10px solid #DEEBFF
+        border-top: 10px solid #DEEBFF;
+        margin-right: 10px;
     }
     .fa-dog::before{
         color: #0065FC;
@@ -267,10 +273,12 @@
         border-radius: 50px;
         margin-left: -5px;
         border-top: 10px solid #DEEBFF;
+        margin-right: 10px;
     }
     .menufiltres ul{
         list-style-type: none;
-        padding:0px
+        padding:0px;
+        margin-bottom: 0px;
     }
     .menufiltres li{
         margin-left: -25px;
@@ -278,14 +286,58 @@
     }
     #information {
         font-size: 13px;
-        margin-left: 20px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        
     }
-    .leslogementspopulaires {
+    .article {
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+    .hebergementsamarseille {
+        order: 2;
+        width: 100%;
+    }
+    .leslogementspopulaires {
         background-color: #F2F2F2;
         border-radius: 24px;
+        order: 1;
+        width:400px;
     }
-    
+    .leslogementspopulaires h1{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+    .leslogementspopulaires article {
+        background-color: white;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 0 0 16px #0000002e;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        box-sizing: border-box;
+        height: 145px;
+        width: 355px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .leslogementspopulaires a {
+        overflow: auto;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    .leslogementspopulaires figure {
+        display:inline-block ;
+        margin: 0;
+        position: relative;
+    }
+    .leslogementspopulaires h2 {
+        font-size: 15px;
+        border-left: 35px;
+        font-weight: bold;
+        display:inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
 }
