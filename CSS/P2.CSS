@@ -298,7 +298,7 @@
   .leslogementspopulaires h1{
     font-size: 22px;
     font-weight: bolder;
-    margin: 40px 15px 45px 30px;
+    margin: 32px 15px 43px 30px;
     flex-basis: 100%;
     align-self: normal;
   }
@@ -444,8 +444,8 @@
   .lesactiviteamarseille h2{
     font-size: 15px;
     font-stretch: expanded;
-    margin-left: 15px;
     font-weight: bold;
+    margin-left: 15px;
   }
   #vieuxport img, #calanques img {
     height: 350px;
@@ -457,10 +457,6 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
-  #fort h2{
-    margin: 6.45px 0px 12.45px 15px;
-  }
-  
   
   #frioul img, 
   #notredame img{
@@ -469,9 +465,6 @@
     border-top-right-radius: 15px;
   }
   
-  #lgt h2{
-    margin: 0px 0px 7px 15px;
-  }
   /* FOOTER */
   footer{
     clear: both;
