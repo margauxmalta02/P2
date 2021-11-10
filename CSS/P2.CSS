@@ -2,7 +2,9 @@
     font-family: 'raleway';
     src: url(../Font/Raleway-Regular.ttf) format('truetype')
   }
-  
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child {
+    margin-top: 0;
+  }
   *{
     font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
   }
@@ -25,6 +27,12 @@
     padding: 0;
     margin: 0;
   }
+  h1{
+    font-size: 22px;
+  }
+  h2{
+    font-size: 15px;
+  }
   /* HEADER */
   .header {
     display: flex;
@@ -32,6 +40,7 @@
     flex-basis: 100%;
     max-width: 1440px;
     font-size: 14px;
+    justify-content: space-between;
   }
   .header img {
     margin: 15px 600px 0px 50px;
@@ -72,7 +81,6 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
   /* SEARCH */
   .search h1{
     font-size: 22px;
@@ -260,15 +268,15 @@
     margin-left: -5px;
     border-top: 10px solid #DEEBFF;
   }
-  #information {
-    font-size: 13px;
-  }
+  
   /* BODY */
   .article{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
     flex: 1 1 0px;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
   .hebergementsamarseille {
     display: flex;
@@ -279,20 +287,20 @@
     border-radius: 24px;
     border-style: solid;
     border-color: #F2F2F2;
-    flex-basis: 60%;
-    align-content: space-between;
+    flex-basis: 65%;
+    justify-content: space-evenly;
   }
   .hebergementsamarseille h1{
-    font-size: 22px;
     font-weight: bolder;
-    order: -1;
-    flex-basis: 100%;
+    flex: 1 1 90%;
+    margin: 13px 0px 0px 43px;
   }
   .leslogementspopulaires h1{
     font-size: 22px;
     font-weight: bolder;
-    margin: 35px 0px 45px 4px;
-    display:inline-block;
+    margin: 40px 15px 45px 30px;
+    flex-basis: 100%;
+    align-self: normal;
   }
   .hebergementsamarseille h2 {
     margin: 4PX 8px 4px 8px;
@@ -312,10 +320,11 @@
     display: flex;
   }
   .hebergementsamarseille>a{
-    padding-bottom: 45px;
-    margin: 15px 0px 0px 30px;
     font-weight: bold;
     order: 1;
+    flex: 0 90%;
+    height: 35px;
+    text-align: left;
   }
   .hebergementsamarseille figure {
     margin: 0;
@@ -327,7 +336,7 @@
     width: 206px;
   }
   .hebergementsamarseille p{
-    margin: 0PX 0px 0px 7px;
+    margin: 0PX 0px 5px 7px;
     font-weight: normal
   }
   .leslogementspopulaires p{
@@ -343,11 +352,9 @@
   .leslogementspopulaires {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #F2F2F2;
     border-radius: 24px;
-    margin-left: 30px;
-    flex-basis: 30%;
+    flex-basis: 32%;
     align-items: center;
   }
   .leslogementspopulaires ul {
@@ -392,6 +399,7 @@
     width: 145px;
     height: 123px;
     border-top-left-radius: 10px;
+    margin-bottom: 4px;
   }
   .leslogementspopulaires a {
     overflow: auto;
@@ -409,14 +417,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 541px;
-    justify-content: flex-end;
-  }
-  .lesactiviteamarseille h1{
-    margin-top: 40px;
-    font-size: 22px;
-    font-weight: bolder;
-    align-self: flex-start;
+    max-height: 470px;
+    justify-content: center;
   }
   .lesactiviteamarseille article{
     background-color: white;
@@ -426,7 +428,7 @@
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
-    width: 272px;
+    max-width: 272px;
     display: flex;
     flex-direction: column;
     margin: 30px 20px 30px 0px;
@@ -445,16 +447,10 @@
     margin-left: 15px;
     font-weight: bold;
   }
-  #vieuxport, #calanques {
-    height: 400px;
-  }
   #vieuxport img, #calanques img {
     height: 350px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-  }
-  #fort, #lgt {
-    height: 190px;
   }
   #fort img, #lgt img {
     height: 150px;
@@ -462,23 +458,19 @@
     border-top-right-radius: 15px;
   }
   #fort h2{
-    margin: 6.45px 0px 12.45px 0px;
+    margin: 6.45px 0px 12.45px 15px;
   }
-
-  #frioul, 
-  #notredame{
-    height: 150px;
-  }
-
+  
+  
   #frioul img, 
   #notredame img{
     height: 100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
-
+  
   #lgt h2{
-    margin: -15px 0px 9px 0px;
+    margin: 0px 0px 7px 15px;
   }
   /* FOOTER */
   footer{
@@ -492,7 +484,7 @@
     padding: 25px;
   }
   footer div{
-    width: 390px;
+    flex-basis: 30%;
   }
   .a.apropos{
     display: flex;
