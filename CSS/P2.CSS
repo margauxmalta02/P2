@@ -8,6 +8,10 @@
   *{
     font-family: 'Raleway-Regular.ttf', Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
   }
+  a{
+    color: black;
+    text-decoration: none;
+  }
   body {
     display: flex;
     flex-direction: column;
@@ -30,7 +34,7 @@
   h1{
     font-size: 22px;
   }
-  h2{
+  h2, p{
     font-size: 15px;
   }
   /* HEADER */
@@ -44,6 +48,7 @@
   }
   .header img {
     margin: 15px 600px 0px 50px;
+    height: 50px;
   }
   .header nav {
     margin-right: 45px;
@@ -268,7 +273,15 @@
     margin-left: -5px;
     border-top: 10px solid #DEEBFF;
   }
-  
+  .fa-info-circle::before {
+    content: "\f05a";
+    color: #0065FC;
+}
+.fa-info::before {
+    content: "\f129";
+    color: #0065FC;
+}
+
   /* BODY */
   .article{
     display:flex;
@@ -442,7 +455,6 @@
     border-top-right-radius: 15px;
   }
   .lesactiviteamarseille h2{
-    font-size: 15px;
     font-stretch: expanded;
     font-weight: bold;
     margin-left: 15px;
