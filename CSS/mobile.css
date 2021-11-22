@@ -9,9 +9,26 @@
     body {
         width: 400px;
     }
+    .main{
+        margin: 0px;
+        padding: 0px 0px;
+    }
     ul{
         display: flex;
         flex-direction: column;
+    }
+    h2{
+        max-width: fit-content;
+    }
+    .rechercher .desktop{
+        display: none;
+    }
+    .rechercher .mobile{
+        display: block;
+    }
+    .search{
+        margin: 0px;
+        padding: 0 32px;
     }
     .header{
         display: flex;
@@ -99,6 +116,9 @@
         flex-basis: auto;
         background-color: white;
         border: none;
+        align-items: normal;
+        margin: 0px;
+        padding: 0 32px;
     }
     .hebergementsamarseille h1{
         flex-basis: 100%;
@@ -113,6 +133,7 @@
     }
     .hebergementsamarseille article{
         margin: 0px 0px 20px 0px;
+        max-width: fit-content;
     }
     .hebergementsamarseille a{
         display: flex;
@@ -120,18 +141,28 @@
     }
     .hebergementsamarseille img {
         object-fit: cover;
-        border-radius: 15px 15px 0 0;
+        border-radius: 15px 15px 0px 0px;
         height: 100px;
         width: 330px;
+    }
+    #acam{
+        margin: 0px;
+        padding: 0 32px 20px 32px;
+    }
+    .main>p{
+        margin: 0px;
+        padding: 20px 32px 20px 32px;
     }
     .lesactiviteamarseille{
         flex-wrap: nowrap;
         max-height: fit-content;
+        margin: 0px;
+        padding: 0 32px;
     }
     .lesactiviteamarseille article{
         width: 330px;
         max-width: none;
-        margin:0px 0px 20px 20px;
+        margin:0px 0px 20px 0px;
     }
     #vieuxport img, #calanques img, #fort img, #lgt img, #frioul img, #notredame img{
         height: 100px;

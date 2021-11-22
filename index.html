@@ -42,7 +42,10 @@
                   </div>
                   <input type="search" autofocus placeholder="Marseille, France" /> 
                   <button class="rechercher">
-                     <a href="#" data-active="true">Rechercher</a>
+                     <a class="mobile" href="#" data-active="true">
+                        <i class="fas fa-search"></i>
+                     </a>
+                     <a class="desktop" href="#" data-active="true">Rechercher</a>
                   </button>
                   <form method="post" action="traitement.php"></form>
                </div>
@@ -215,7 +218,7 @@
          </div>
       </div> 
       
-      <h1>Activités à Marseille</h1>
+      <h1 id="acam">Activités à Marseille</h1>
       <div class="lesactiviteamarseille">
          <article id="vieuxport">
             <figure>

@@ -147,6 +147,12 @@
     font-size: 15px;
     font-weight: bold;
   }
+  .rechercher .mobile{
+    display: none;
+}
+.rechercher .desktop{
+  display: block;
+}
   .fa, .fab, .fad, .fal, .far, .fas {
     display: inline-block;
     margin-right: 5px;
