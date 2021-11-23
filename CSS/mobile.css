@@ -2,7 +2,7 @@
     font-family: 'raleway';
     src: url(../Font/Raleway-Regular.ttf) format('truetype')
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     *{
         font-stretch: semi-expanded;
     }
@@ -149,15 +149,16 @@
         margin: 0px;
         padding: 0 32px 20px 32px;
     }
-    .main>p{
+    .search>p{
         margin: 0px;
-        padding: 20px 32px 20px 32px;
+        padding: 0 32px 20px 32px;
     }
     .lesactiviteamarseille{
         flex-wrap: nowrap;
         max-height: fit-content;
         margin: 0px;
         padding: 0 32px;
+        flex-direction: column;
     }
     .lesactiviteamarseille article{
         width: 330px;

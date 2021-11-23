@@ -1,7 +1,7 @@
-  @font-face {
-    font-family: 'raleway';
-    src: url(../Font/Raleway-Regular.ttf) format('truetype')
-  }
+@font-face {
+  font-family: 'raleway';
+  src: url(../Font/Raleway-Regular.ttf) format('truetype')
+}
   h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child {
     margin-top: 0;
   }
@@ -47,7 +47,7 @@
     justify-content: space-between;
   }
   .header img {
-    margin: 15px 600px 0px 50px;
+    margin: 15px auto 0px 50px;
     height: 50px;
   }
   .header nav {
@@ -149,10 +149,10 @@
   }
   .rechercher .mobile{
     display: none;
-}
-.rechercher .desktop{
-  display: block;
-}
+  }
+  .rechercher .desktop{
+    display: block;
+  }
   .fa, .fab, .fad, .fal, .far, .fas {
     display: inline-block;
     margin-right: 5px;
@@ -160,12 +160,11 @@
     text-align: center;
   }
   .menufiltres{
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    font-size: 17px;
-    font-weight: bold;
-    margin-right: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   .search h2{
     font-size: 15px;
@@ -177,17 +176,52 @@
     margin: auto;
   }
   .button.money{
-    padding-right: 10px;
+    margin: 30px 21px 0px 5px;
+    width: auto;
+    height: 38px;
+    display: table;
     text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: auto;
+    border: 3px solid #F2F2F2;
   }
   .button.dog{
+    margin: 30px 21px 0px 5px;
+    width: auto;
+    height: 38px;
+    display: table;
     text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: auto;
+    border: 3px solid #F2F2F2;
   }
   .button.child{
+    margin: 30px 21px 0px 5px;
+    width: auto;
+    height: 38px;
+    display: table;
     text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: auto;
+    border: 3px solid #F2F2F2;
   }
   .button.gratipay{
+    margin: 30px 21px 0px 5px;
+    width: auto;
+    height: 38px;
+    display: table;
     text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: auto;
+    border: 3px solid #F2F2F2;
   }
   .money{
     display: flex;
@@ -282,12 +316,12 @@
   .fa-info-circle::before {
     content: "\f05a";
     color: #0065FC;
-}
-.fa-info::before {
+  }
+  .fa-info::before {
     content: "\f129";
     color: #0065FC;
-}
-
+  }
+  
   /* BODY */
   .article{
     display:flex;
@@ -333,7 +367,7 @@
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
-    margin: 0px 20px 0px 17px;
+    margin: 20px 20px 20px 17px;
     border: 15px;
     align-content: center;
     display: flex;

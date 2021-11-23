@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'raleway';
+    src: url(../Font/Raleway-Regular.ttf) format('truetype')
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .menufiltres button{
+        margin: 0px 0px 0Px 20px;
+    }
+    .leslogementspopulaires{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        flex-basis: auto
+    }
+    .leslogementspopulaires h1{
+        font-weight: bolder;
+        flex: 1 1 90%;
+        margin: 15px 20px 20px 43px;
+    }
+    .leslogementspopulaires h2{
+        margin-top: 0px;
+    }
+    .leslogementspopulaires article {
+        width: 30%;
+        height: 205px;
+    }
+    .leslogementspopulaires ul {
+        margin: 0px 0px 0px 10px;
+    }
+    .hebergementsamarseille{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0px ;
+        justify-content: space-evenly;
+        flex-basis: auto;
+    }
+    .hebergementsamarseille article{
+        margin: 20px 20px
+    }
+    .leslogementspopulaires img {
+        border-top-right-radius: 10px;
+        width: 207px;
+        height: 99px;
+        border-top-left-radius: 10px;
+        margin-bottom: 4px;
+    }
+    .leslogementspopulaires a {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 10px;
+    }
+    .lesactiviteamarseille {
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-height: none;
+    }
+    #vieuxport img, #calanques img, #fort img, #lgt img, #frioul img, #notredame img{
+        height: 100px;
+        width: 269px;
+    }
+    footer{
+        line-height: 1;
+    }
+}
