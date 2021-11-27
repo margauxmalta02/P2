@@ -13,13 +13,13 @@
 </head>
 <body> 
    <!-- HEADER -->
-   <section class="header">
+   <section id="entete">
       
       <a><img src="images/logo/Booki.png" alt="logo Booki" /> </a>
       <nav>
          <ul>
-            <li><a href="#hébergements" >Hébergements</a></li>
-            <li><a href="#Activités" >Activitées</a></li>
+            <li><a href="#hebergementamarseille">Hébergements</a></li>
+            <li><a href="#acam">Activitées</a></li>
          </ul>
       </nav>
       
@@ -42,12 +42,10 @@
                      <i class="fas fa-map-marker-alt"></i>
                   </div>
                   <input type="search" autofocus placeholder="Marseille, France" /> 
-                  <button class="rechercher">
                      <a class="mobile" href="#" data-active="true">
                         <i class="fas fa-search"></i>
                      </a>
                      <a class="desktop" href="#" data-active="true">Rechercher</a>
-                  </button>
                   <form method="post" action="traitement.php"></form>
                </div>
             </nav>
@@ -55,19 +53,35 @@
          <div class="menufiltres">
             <h2>Filtres</h2>
             <ul>
-               <li><button class="money"><a href="#" data-active="true"><i class="fas fa-money-bill-wave-alt"></i>Economique</a></button></li>
-               <li><button class="child"><a href="#" data-active="true"><i class="fas fa-child"></i>Familial</a></button></li>
-               <li><button class="gratipay"><a href="#" data-active="true"><i class="fab fa-gratipay"></i>Romantique</a></button></li>
-               <li><button class="dog"><a href="#" data-active="true"><i class="fas fa-dog"></i>Animaux autorisés</a></button></li>
+               <li id="economique">
+                  <a href="#" data-active="true">
+                     <i class="fas fa-money-bill-wave-alt"></i><span>Economique</span>
+                  </a>
+               </li>
+               <li id=famille>
+                  <a href="#" data-active="true">
+                     <i class="fas fa-child"></i><span>Familial</span>
+                  </a>
+               </li>
+               <li id=romantique>
+                  <a href="#" data-active="true">
+                  <i class="fab fa-gratipay"></i><span>Romantique</span>
+                  </a>
+               </li>
+               <li id=animaux>
+                  <a href="#" data-active="true">
+                    <i class="fas fa-dog"></i><span>Animaux autorisés</span>
+                  </a>
+               </li>
             </ul>
          </div>
       </section>
-      <p><i class="fas fa-info"></i></i>Plus de 500 logements sont disponibles dans cette ville</p>
+      <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
       
       <!-- BODY -->
       <div class="article">
          <div class="hebergementsamarseille">
-            <h1>Hébergements à Marseille</h1>
+            <h1 id="hebergementamarseille" >Hébergements à Marseille</h1>
             <article>
                <a href="#">
                   <figure>
@@ -219,7 +233,7 @@
          </div>
       </div> 
       
-      <h1 id="acam">Activités à Marseille</h1>
+      <h1 id="acam" >Activités à Marseille</h1>
       <div class="lesactiviteamarseille">
          <article id="vieuxport">
             <figure>
@@ -234,25 +248,25 @@
             <a href="#"><h2>Fort de Pomègues</h2></a>
          </article>
          <article id="frioul">
-            <figure id="frioul">
+            <figure>
                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
             </figure>
             <a href="#"><h2>Iles du Frioul</h2></a>
          </article>
          <article id="calanques">
-            <figure id="calanques">
+            <figure>
                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
             </figure>
             <a href="https://fr.wikipedia.org/wiki/Parc_national_des_Calanques"><h2>Parc National des Calanques</h2></a>
          </article>
          <article id="notredame">
-            <figure id="notredame">
+            <figure>
                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
             </figure>
             <a href="#"><h2>Notre-Dame-de-la-Garde</h2></a>
          </article>
          <article id="lgt">
-            <figure id="lgt">
+            <figure>
                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
             </figure>
             <a href="#"><h2>Parc Longchamp</h2></a>
