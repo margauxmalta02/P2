@@ -7,28 +7,8 @@
         border-top: 3px solid #0065FC;
         color: #0065FC;
       }
-    .leslogementspopulaires{
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-top: 20px;
-        justify-content: space-evenly;
-        flex-basis: auto
-    }
     .menufiltres a {
         padding-right: 0px;
-    }
-    .leslogementspopulaires h1{
-        font-weight: bolder;
-        flex: 1 1 90%;
-        margin: 15px 20px 20px 43px;
-    }
-    .leslogementspopulaires h2{
-        margin-top: 0px;
-    }
-    .leslogementspopulaires ul {
-        margin: 0px 0px 0px 10px;
     }
     .hebergementsamarseille{
         height: auto;
@@ -41,6 +21,26 @@
     }
     .hebergementsamarseille article{
         margin: 20px 20px
+    }
+    .leslogementspopulaires{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        flex-basis: auto
+    }
+    .leslogementspopulaires h1{
+        font-weight: bolder;
+        flex: 1 1 90%;
+        margin: 15px 20px 20px 43px;
+    }
+    .leslogementspopulaires ul {
+        margin: 0px 0px 0px 10px;
+    }
+    .leslogementspopulaires h2{
+        margin-top: 0px;
     }
     .leslogementspopulaires img {
         border-radius: 10px 10px 0px 0px;
