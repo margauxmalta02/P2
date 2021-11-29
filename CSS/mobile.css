@@ -20,26 +20,15 @@
     h2{
         max-width: fit-content;
     }
-    .mobile{
-        display: block;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        color: white;
-        background-color:#0065FC ;
-        border-style: none;
-        align-items: center;
-        padding-right: 10px;
-        padding-left: 10px;
-        font-size: 15px;
-        font-weight: bold;
-        padding-top: 10px;
+    .article {
+        flex-direction: column-reverse;
+        flex-basis: auto;
     }
-    .desktop{
-        display: none;
-    }
-    .search{
-        margin: 0px;
-        padding: 0 32px;
+    .titre{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: baseline;
     }
     #entete{
         display: flex;
@@ -82,17 +71,36 @@
         border-top: 3px solid #0065FC;
         color: #0065FC;
     }
-    .titre{
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        align-items: baseline;
+    .search{
+        margin: 0px;
+        padding: 0 32px;
     }
-    footer{
-        display: flex;
-        flex-direction: column ;
-        max-height: none;
-        max-width: none;
+    .search h2{
+        margin: 0px;
+    }
+    .search p {
+        margin: 12px 0px 0px 0px;
+    }
+    .search>p{
+        margin: 0px;
+        padding: 0 32px 20px 32px;
+    }
+    .mobile{
+        display: block;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: white;
+        background-color:#0065FC ;
+        border-style: none;
+        align-items: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+    .desktop{
+        display: none;
     }
     .menufiltres {
         display: flex;
@@ -109,21 +117,11 @@
         display: flex;
         flex-direction: column;
     }
-    .search h2{
-        margin: 0px;
-    }
-    .search p {
-        margin: 12px 0px 0px 0px;
-    }
-    #economique{
-        margin: 20px 0px 0px 0px;   
-    }
     .menufiltres span{
         margin-top: 10px;
     }
-    .article {
-        flex-direction: column-reverse;
-        flex-basis: auto;
+    #economique{
+        margin: 20px 0px 0px 0px;   
     }
     .leslogementspopulaires {
         flex-direction: column;
@@ -164,14 +162,6 @@
         height: 100px;
         width: 330px;
     }
-    #acam{
-        margin: 0px;
-        padding: 0 32px 20px 32px;
-    }
-    .search>p{
-        margin: 0px;
-        padding: 0 32px 20px 32px;
-    }
     .lesactiviteamarseille{
         flex-wrap: nowrap;
         max-height: fit-content;
@@ -184,14 +174,24 @@
         max-width: none;
         margin:0px 0px 20px 0px;
     }
-    #vieuxport img, #calanques img, #fort img, #lgt img, #frioul img, #notredame img{
-        height: 100px;
-        width: 328px;
-    }
     .lesactiviteamarseille figure{
         height: 100px;
         width: 330px;
         line-height: 1.15;
+    }
+    #acam{
+        margin: 0px;
+        padding: 0 32px 20px 32px;
+    }
+    #vieuxport img, #calanques img, #fort img, #lgt img, #frioul img, #notredame img{
+        height: 100px;
+        width: 328px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column ;
+        max-height: none;
+        max-width: none;
     }
     footer div {
         line-height: 100%;
