@@ -1,0 +1,17 @@
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    padding: 25px;
+}
+
+footer h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer li{
+    margin: 10px;
+}

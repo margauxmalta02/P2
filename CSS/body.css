@@ -1,0 +1,236 @@
+/* BODY */
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px;
+    height: auto;
+    overflow-x:hidden 
+}
+
+.article{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.article .fas.fa-star{
+    color: #0065FC;
+}
+
+/* hebergementsamarseille */
+#hebergementsamarseille {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    flex-basis: 70%;
+    justify-content: space-around;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#hebergementsamarseille h1{
+    font-weight: bolder;
+    flex-basis: 100%;
+}
+
+#hebergementsamarseille h2 {
+    margin: 4PX 8px 4px 8px;
+}
+
+#hebergementsamarseille article {
+    background-color: white;
+    padding: 4px;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#hebergementsamarseille>a{
+    font-weight: bold;
+    order: 1;
+    flex: 0 90%;
+    height: 35px;
+    text-align: left;
+    padding: 24px;
+}
+
+#hebergementsamarseille figure {
+    margin: 0;
+}
+
+#hebergementsamarseille img {
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    height: 90px;
+    width: 185px;
+}
+
+#hebergementsamarseille ul{
+    display: flex;
+    padding-left: 8px;
+    margin-bottom: 3px;
+}
+
+#hebergementsamarseille li{
+    margin: 0px;
+}
+
+#hebergementsamarseille p{
+    margin: 0PX 0px 5px 7px;
+    font-weight: normal
+}
+
+/* leslogementspopulaires */
+
+.logements{
+    display: flex;
+    flex-direction: column;
+}
+
+#leslogementspopulaires {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    flex-basis: 32%;
+    align-items: stretch;
+    padding: 10px;
+}
+
+#leslogementspopulaires article {
+    background-color: white;
+    padding: 4px;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#leslogementspopulaires h1{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+#leslogementspopulaires h2 {
+    font-size: 15px;
+    border-left: 35px;
+    font-weight: bold;
+    display:inline-block;
+    text-align: left;
+    width: 130px;
+    height: 35.25px;
+}
+
+#leslogementspopulaires a {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#leslogementspopulaires p{
+    font-weight: normal;
+    margin: 0px 0px 28px 0px;
+}
+
+#leslogementspopulaires ul {
+    margin: 3px 14px 3px 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#leslogementspopulaires li {
+    margin: 0px;
+}
+
+#leslogementspopulaires figure {
+    display:inline-block ;
+    margin: 0;
+    position: relative;
+    flex-basis: 450px;
+}
+
+#leslogementspopulaires img{
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+    width: 110px;
+    height: 130px;
+    max-height: fit-content;
+    border-top-left-radius: 10px;
+    margin-right: 10px; 
+}
+
+/* lesactiviteamarseille */
+
+#lesactiviteamarseille{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 470px;
+}
+
+#lesactiviteamarseille article{
+    background-color: white;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    max-width: 272px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px 30px 0px;
+}
+
+#lesactiviteamarseille img{
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#lesactiviteamarseille h2 {
+    padding-left: 10px;
+}
+
+#vieuxport img, 
+#calanques img,
+#fort img, 
+#lgt img,
+#frioul img, 
+#notredame img{
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#vieuxport img, 
+#calanques img {
+    height: 350px;
+}
+
+#fort img, 
+#lgt img {
+    height: 150px;
+}
+
+#frioul img, 
+#notredame img{
+    height: 100px;
+}

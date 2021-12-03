@@ -123,12 +123,12 @@
     #economique{
         margin: 20px 0px 0px 0px;   
     }
-    .leslogementspopulaires {
+    #leslogementspopulaires {
         flex-direction: column;
         flex-basis: auto;
         border-radius: inherit;
     }
-    .hebergementsamarseille{
+    #hebergementsamarseille{
         flex-direction: column;
         flex-basis: auto;
         background-color: white;
@@ -137,44 +137,44 @@
         margin: 0px;
         padding: 0 32px;
     }
-    .hebergementsamarseille h1{
+    #hebergementsamarseille h1{
         flex-basis: 100%;
         margin: 20px;
     }
-    .leslogementspopulaires ul, .hebergementsamarseille ul{
+    #leslogementspopulaires ul, #hebergementsamarseille ul{
         display: flex;
         flex-direction: row;
     }
-    .hebergementsamarseille h1 {
+    #hebergementsamarseille h1 {
         margin:30px 60px 30px 0px;
     }
-    .hebergementsamarseille article{
+    #hebergementsamarseille article{
         margin: 0px 0px 20px 0px;
         max-width: fit-content;
     }
-    .hebergementsamarseille a{
+    #hebergementsamarseille a{
         display: flex;
         flex-direction: column;
     }
-    .hebergementsamarseille img {
+    #hebergementsamarseille img {
         object-fit: cover;
         border-radius: 15px 15px 0px 0px;
         height: 100px;
         width: 330px;
     }
-    .lesactiviteamarseille{
+    #lesactiviteamarseille{
         flex-wrap: nowrap;
         max-height: fit-content;
         margin: 0px;
         padding: 0 32px;
         flex-direction: column;
     }
-    .lesactiviteamarseille article{
+    #lesactiviteamarseille article{
         width: 330px;
         max-width: none;
         margin:0px 0px 20px 0px;
     }
-    .lesactiviteamarseille figure{
+    #lesactiviteamarseille figure{
         height: 100px;
         width: 330px;
         line-height: 1.15;
