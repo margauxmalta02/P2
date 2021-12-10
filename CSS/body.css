@@ -180,6 +180,10 @@ body {
     justify-content: center;
 }
 
+#lesactiviteamarseille h2{
+    padding-left: 10px;
+}
+
 #lesactiviteamarseille article{
     background-color: white;
     padding-bottom: 5px;

@@ -7,6 +7,13 @@
         border-top: 3px solid #0065FC;
         color: #0065FC;
     }
+
+    .search span {
+        font-size: 15px;
+        padding: 10px 2px;
+        font-weight: bold;
+    }
+    
     .menufiltres a {
         padding-right: 0px;
     }
