@@ -23,7 +23,8 @@
 }
 
 #entete li {
-    padding: 0 19px;
+    padding: 30px 20px;
+    display: block;
 }
 
 #entete nav ul li a {
@@ -37,7 +38,7 @@
     margin-bottom: 15px;
 }
 
-#entete nav ul li a:hover {
+#entete nav li:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }

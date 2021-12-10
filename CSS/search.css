@@ -23,8 +23,8 @@
 }
 
 #rechercher{
-    border-top-right-radius: 15%;
-    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color:  #0065FC;
     color: white;
     max-width: fit-content;

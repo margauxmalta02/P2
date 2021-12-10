@@ -76,9 +76,9 @@
         margin-right: 0px;
     }
     
-    #entete nav a:hover {
+    #entete nav li:hover {
         border-bottom: 3px solid #0065FC;
-        border-top: none;
+        border-top: 0;
         color: #0065FC;
     }
     
