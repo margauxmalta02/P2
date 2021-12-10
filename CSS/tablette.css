@@ -6,10 +6,15 @@
     #entete nav p:hover {
         border-top: 3px solid #0065FC;
         color: #0065FC;
-      }
+    }
     .menufiltres a {
         padding-right: 0px;
     }
+    
+    .article{
+        flex-direction: column-reverse;
+    }
+    
     #hebergementsamarseille{
         height: auto;
         display: flex;
@@ -18,10 +23,21 @@
         margin: 0px ;
         justify-content: space-evenly;
         flex-basis: auto;
+        margin: 30PX 0px;
     }
+    
+    #hebergementsamarseille h1{
+        padding-left: 43px;
+    }
+    
     #hebergementsamarseille article{
         margin: 20px 20px
     }
+    
+    #hebergementsamarseille img {
+        width: 230px;
+    }
+    
     #leslogementspopulaires{
         height: auto;
         display: flex;
@@ -31,39 +47,51 @@
         justify-content: space-evenly;
         flex-basis: auto
     }
+    
+    #leslogementspopulaires article{
+        display: flex;
+        flex-direction: column;
+    }
+    
     #leslogementspopulaires h1{
         font-weight: bolder;
         flex: 1 1 90%;
-        margin: 15px 20px 20px 43px;
+        margin: 15px 40px 20px 43px;
     }
-    #leslogementspopulaires ul {
-        margin: 0px 0px 0px 10px;
-    }
+    
     #leslogementspopulaires h2{
         margin-top: 0px;
     }
+    
     #leslogementspopulaires img {
         border-radius: 10px 10px 0px 0px;
-        width: 220px;
-        height: 99px;
-        margin-bottom: 4px;
-        
+        width: 240px;
+        height: 120px;
+        padding-bottom: 10px;
     }
+    
     #leslogementspopulaires a {
         overflow: auto;
         display: flex;
         flex-direction: column;
-        margin: 0px 0px 0px 10px;
     }
+    
     #lesactiviteamarseille {
         flex-wrap: wrap;
         flex-direction: row;
         max-height: none;
+        justify-content: space-between;
     }
+    
+    #lesactiviteamarseille h2{
+        padding-left: 10px;
+    }
+    
     #vieuxport img, #calanques img, #fort img, #lgt img, #frioul img, #notredame img{
         height: 100px;
         width: 269px;
     }
+    
     footer{
         line-height: 1;
     }

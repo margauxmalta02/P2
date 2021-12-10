@@ -7,11 +7,18 @@ footer{
     padding: 25px;
 }
 
+footer div{
+    flex-basis: 30%;
+}
+
 footer h3{
     font-size: 15px;
     font-weight: bold;
 }
+footer ul{
+    padding-left: 0px;
+}
 
 footer li{
-    margin: 10px;
+    margin-bottom: 10px;
 }

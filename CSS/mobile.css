@@ -6,55 +6,64 @@
     *{
         font-stretch: semi-expanded;
     }
-    body {
-        width: 400px;
-    }
-    .main{
+    
+    main{
         margin: 0px;
         padding: 0px 0px;
     }
+    
     ul{
         display: flex;
         flex-direction: column;
     }
+    
     h2{
         max-width: fit-content;
     }
+    
     .article {
         flex-direction: column-reverse;
         flex-basis: auto;
     }
+    
     .titre{
         display: flex;
         flex-direction: column;
-        width: 300px;
         align-items: baseline;
     }
+    
     #entete{
         display: flex;
         flex-direction: column;
     }
+    
     #entete img, #entete a{
         display: flex;
         justify-content: center;
         margin: 0px;
     }
+    
     #entete img{
         margin-top: 15px;
+        align-self: center;
     }
+    
     #entete nav {
         flex-basis: 100%;
     }
+    
     #entete ul {
-        margin: 19px 0;
         width: 100%;
         display: flex;
         flex-direction: row;
+        padding-left: 0px;
     }
+    
     #entete li {
         width: 50%;
         padding: 0px;
     }
+    
     #entete a {
         font-weight: 500;
         text-align: center;
@@ -62,29 +71,44 @@
         border-bottom: 3px transparent solid;
         padding-bottom: 15px;
     }
+    
+    #entete nav {
+        margin-right: 0px;
+    }
+    
     #entete nav a:hover {
         border-bottom: 3px solid #0065FC;
         border-top: none;
         color: #0065FC;
     }
+    
     #entete nav a[data-active="true"] {
         border-top: 3px solid #0065FC;
         color: #0065FC;
     }
+    
     .search{
         margin: 0px;
         padding: 0 32px;
     }
+    
     .search h2{
         margin: 0px;
     }
+    
     .search p {
         margin: 12px 0px 0px 0px;
     }
+    
     .search>p{
         margin: 0px;
         padding: 0 32px 20px 32px;
     }
+    
+    #rechercher {
+        display: none;
+    }
+    
     .mobile{
         display: block;
         border-top-right-radius: 15px;
@@ -99,35 +123,60 @@
         font-weight: bold;
         padding-top: 10px;
     }
+    
     .desktop{
         display: none;
     }
+    
     .menufiltres {
         display: flex;
         flex-direction: column;
     }
+    
     .menufiltres li{
         display: flex;
         margin: 10px 0px 0Px 0px;
     }
+    
     .menufiltres a{
         display: flex;
     }
+    
     .menufiltres ul{
         display: flex;
         flex-direction: column;
     }
+    
     .menufiltres span{
-        margin-top: 10px;
+        padding-left: 10px
     }
-    #economique{
-        margin: 20px 0px 0px 0px;   
+    
+    #animaux, 
+    #economique, 
+    #famille, 
+    #romantique {
+        margin: 20px 0px 0px 0px;
     }
+    
+    #infos{
+        padding-left: 32px;
+    }
+    
     #leslogementspopulaires {
         flex-direction: column;
         flex-basis: auto;
         border-radius: inherit;
+        margin-top: 20px;
     }
+    
+    #leslogementspopulaires img {
+        width: 40%;
+    }
+    
+    #leslogementspopulaires article{
+        width: 100%;
+    }
+    
     #hebergementsamarseille{
         flex-direction: column;
         flex-basis: auto;
@@ -137,31 +186,42 @@
         margin: 0px;
         padding: 0 32px;
     }
+    
     #hebergementsamarseille h1{
         flex-basis: 100%;
-        margin: 20px;
+        margin: 20px 0px;
     }
+    
     #leslogementspopulaires ul, #hebergementsamarseille ul{
         display: flex;
         flex-direction: row;
     }
+    
     #hebergementsamarseille h1 {
         margin:30px 60px 30px 0px;
     }
+    
     #hebergementsamarseille article{
         margin: 0px 0px 20px 0px;
         max-width: fit-content;
     }
+    
     #hebergementsamarseille a{
         display: flex;
         flex-direction: column;
     }
+    
     #hebergementsamarseille img {
         object-fit: cover;
         border-radius: 15px 15px 0px 0px;
-        height: 100px;
-        width: 330px;
+        height: 125px;
+        width: 295px;
     }
+    
+    #hebergementsamarseille>a{
+        padding: 20px 0px;
+    }
+    
     #lesactiviteamarseille{
         flex-wrap: nowrap;
         max-height: fit-content;
@@ -169,31 +229,42 @@
         padding: 0 32px;
         flex-direction: column;
     }
+    
     #lesactiviteamarseille article{
-        width: 330px;
+        width: 100%;
         max-width: none;
         margin:0px 0px 20px 0px;
     }
+    
     #lesactiviteamarseille figure{
-        height: 100px;
-        width: 330px;
+        height: auto;
+        width: 100%;
         line-height: 1.15;
     }
+    
+    #lesactiviteamarseille h2{
+        padding-left: 10px;
+    }
+    
     #acam{
         margin: 0px;
         padding: 0 32px 20px 32px;
     }
+    
     #vieuxport img, #calanques img, #fort img, #lgt img, #frioul img, #notredame img{
-        height: 100px;
-        width: 328px;
+        height: 150px;
+        width: 100%;
     }
+    
     footer{
         display: flex;
-        flex-direction: column ;
+        flex-direction: column;
         max-height: none;
         max-width: none;
     }
-    footer div {
+    
+    footer div{
         line-height: 100%;
         margin: 15px;
     }
+}

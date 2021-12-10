@@ -2,7 +2,6 @@
 .search h1{
     font-size: 22px;
     font-weight: bolder;
-    margin: auto;
 }
 
 .search nav{
@@ -64,7 +63,6 @@
 .menufiltres{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
     margin: 40px 0px;
 }
 
@@ -102,10 +100,17 @@
     display: flex;
     flex-wrap: nowrap;
     border: 2px solid #F2F2F2;
+    margin: 0px 20px;
 }
 
 .search h2{
     font-size: 15px;
+    font-weight: bold;
+}
+
+.search span{
+    font-size: 15px;
+    padding: 10px 10px;
     font-weight: bold;
 }
 
