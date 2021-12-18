@@ -7,10 +7,14 @@
         border-top: 3px solid #0065FC;
         color: #0065FC;
     }
-
-    .search span {
+    
+    .map span{
+        padding: 10px;
+    }
+    
+    .menufiltres span {
         font-size: 15px;
-        padding: 10px 10px;
+        padding: 10px 2px;
         font-weight: bold;
     }
     
@@ -28,13 +32,13 @@
         flex-wrap: wrap;
         flex-direction: row;
         margin: 0px ;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-basis: auto;
         margin: 30PX 0px;
     }
     
     #hebergementsamarseille h1{
-        padding-left: 43px;
+        padding-left: 68px;
     }
     
     #hebergementsamarseille article{
@@ -51,7 +55,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         margin-top: 20px;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-basis: auto
     }
     
@@ -63,7 +67,7 @@
     #leslogementspopulaires h1{
         font-weight: bolder;
         flex: 1 1 90%;
-        margin: 15px 40px 20px 43px;
+        margin: 25px 58px 22px 58px;
     }
     
     #leslogementspopulaires h2{
@@ -77,6 +81,10 @@
         padding-bottom: 10px;
     }
     
+    #acam {
+        padding-left: 40px;
+    }
+
     #leslogementspopulaires a {
         overflow: auto;
         display: flex;
@@ -87,11 +95,15 @@
         flex-wrap: wrap;
         flex-direction: row;
         max-height: none;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     #lesactiviteamarseille h2{
         padding-left: 10px;
+    }
+    
+    #hebergementsamarseille > a{
+        padding-left: 60px
     }
     
     #vieuxport img, #calanques img, #fort img, #lgt img, #frioul img, #notredame img{
@@ -101,6 +113,7 @@
     
     footer{
         line-height: 1;
-        justify-content: space-around;
+        justify-content: space-between;
+        ;
     }
 }
