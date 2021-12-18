@@ -167,6 +167,7 @@
         flex-basis: auto;
         border-radius: inherit;
         margin-top: 20px;
+        padding: 0 32px;
     }
     
     #leslogementspopulaires img {
@@ -189,7 +190,7 @@
     
     #hebergementsamarseille h1{
         flex-basis: 100%;
-        margin: 20px 0px;
+        margin: 20px 20px; 
     }
     
     #leslogementspopulaires ul, #hebergementsamarseille ul{
@@ -203,19 +204,23 @@
     
     #hebergementsamarseille article{
         margin: 0px 0px 20px 0px;
-        max-width: fit-content;
+        max-width: 100%;
     }
     
     #hebergementsamarseille a{
         display: flex;
         flex-direction: column;
     }
+
+    #hebergementsamarseille>a{
+        padding: 30px 0px;
+    }
     
     #hebergementsamarseille img {
         object-fit: cover;
         border-radius: 15px 15px 0px 0px;
         height: 125px;
-        width: 295px;
+        width: 307px;
     }
     
     #hebergementsamarseille>a{

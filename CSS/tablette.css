@@ -10,7 +10,7 @@
 
     .search span {
         font-size: 15px;
-        padding: 10px 2px;
+        padding: 10px 10px;
         font-weight: bold;
     }
     
@@ -101,5 +101,6 @@
     
     footer{
         line-height: 1;
+        justify-content: space-around;
     }
 }
