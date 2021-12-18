@@ -170,6 +170,10 @@ body {
     border-top-left-radius: 10px;
 }
 
+.article{
+    margin-bottom: 20px;
+}
+
 /* lesactiviteamarseille */
 
 #lesactiviteamarseille{
@@ -178,10 +182,6 @@ body {
     flex-wrap: wrap;
     max-height: 470px;
     justify-content: center;
-}
-
-#acam{
-    padding-top: 25px;
 }
 
 #lesactiviteamarseille h2{
